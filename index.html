@@ -2,11 +2,245 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк: Главная</title>
   </head>
   <body>
+    <header class="page-header">
+      <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle" checked>
+      <nav class="main-navigation">
+        <label for="page-header__toggle" class="page-header__toggle--close"></label>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#" class="logo-link">
+              <img src="http://placehold.it/75x22" alt="" class="logo-pink">
+            </a>
+          </li>
+          <li class="main-navigation__item  main-navigation__item--active">
+            <a href="#">Информация</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">Возможности</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-image">
+      <p class="main-image__header">
+        Взгляните на жизнь иначе!
+      </p>
+      <img src="http://placehold.it/150x100" alt="">
+    </div>
+    <div class="app-download">
+      <a href="#" class="button app-download__button">
+        Скачать приложение
+      </a>
+      <div class="app-download__logos">
+        <a href="#" class="app-download__link">
+          <img src="http://placehold.it/47x56" alt="" class="app-downolad__logo  apple-logo">
+        </a>
+        <a href="#" class="app-download__link">
+          <img src="http://placehold.it/43x47" alt="" class="app-downolad__logo  android-logo">
+        </a>
+        <a href="#" class="app-download__link">
+          <img src="http://placehold.it/44x41" alt="" class="app-downolad__logo  microsoft-logo">
+        </a>
+      </div>
+      <p class="app-download__text">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </div>
+    <div class="promotion">
+      <p class="promotion__text">
+        Устали от серости мегаполиса?
+      </p>
+      <p class="promotion__text">
+        Нам есть, что вам предложить!
+      </p>
+    </div>
+    <div class="app-features">
+      <div class="feature">
+        <p class="feature__header">
+          Поднимает настроение
+        </p>
+        <p class="feature__text">
+          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        </p>
+      </div>
+      <div class="feature">
+        <p class="feature__header">
+          Меняет мир вокруг
+        </p>
+        <p class="feature__text">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </p>
+      </div>
+      <div class="feature">
+        <p class="feature__header">
+          Заводит новых друзей
+        </p>
+        <p class="feature__text">
+          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+        <img src="http://placehold.it/157x320" alt="" class="feature__image">
+      </div>
+    </div>
+    <div class="feedbacks">
+      <input type="radio" class="feedbacks__slider-switcher" name="radio-feedback" id="radio-feedback1" checked>
+      <input type="radio" class="feedbacks__slider-switcher" name="radio-feedback" id="radio-feedback2">
+      <input type="radio" class="feedbacks__slider-switcher" name="radio-feedback" id="radio-feedback3">
+      <div class="feedback">
+        <p class="feedback__header">
+          Николай Петров
+        </p>
+        <p class="feedback__text">
+          &#171Это приложение перевернуло мой мир и позволило по&#x2010новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187
+        </p>
+      </div>
+      <div class="feedback">
+        <p class="feedback__header">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+        </p>
+        <p class="feedback__text">
 
+        </p>
+      </div>
+      <div class="feedback">
+        <p class="feedback__header">
+
+        </p>
+        <p class="feedback__text">
+
+        </p>
+      </div>
+      <div class="feedback__switcher">
+        <label for="radio-feedback1" class="feedback__slider-btn"></label>
+        <label for="radio-feedback2" class="feedback__slider-btn"></label>
+        <label for="radio-feedback3" class="feedback__slider-btn"></label>
+      </div>
+    </div>
+    <div class="tariffs">
+      <input type="radio" class="tariffs__slider-switcher" name="radio-tariff" id="radio-tariff1">
+      <input type="radio" class="tariffs__slider-switcher" name="radio-tariff" id="radio-tariff2" checked>
+      <input type="radio" class="tariffs__slider-switcher" name="radio-tariff" id="radio-tariff3">
+      <div class="tariff">
+        <div class="tariff__name">
+          <p class="tarrif__name-header">
+            Стандарт
+          </p>
+          <p class="tariff__name-text">
+            3,99 USD
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+            Розовый фильтр
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+            Смайлики
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+            Комментарии
+          </p>
+        </div>
+      </div>
+      <div class="tariff">
+        <div class="tariff__name">
+          <p class="tarrif__name-header">
+
+          </p>
+          <p class="tariff__name-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+      </div>
+      <div class="tariff">
+        <div class="tariff__name">
+          <p class="tarrif__name-header">
+
+          </p>
+          <p class="tariff__name-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+        <div class="tariff__feature">
+          <p class="tariff__feature-text">
+
+          </p>
+        </div>
+      </div>
+      <div class="tariffs__switcher">
+        <label for="radio-tariff1" class="tariffs__slider-btn"></label>
+        <label for="radio-tariff2" class="tariffs__slider-btn"></label>
+        <label for="radio-tariff3" class="tariffs__slider-btn"></label>
+      </div>
+    </div>
+    <footer class="contacts">
+      <p class="contacts__header">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+      <div class="contacts__description">
+        <p class="contacts__description-header">
+          Звоните:
+        </p>
+        <p class="contacts__description-text">
+          +7 (812) 555&#x2010;66&#x2010;66
+        </p>
+      </div>
+      <div class="contacts__description">
+        <p class="contacts__description-header">
+          Пишите:
+        </p>
+        <p class="contacts__description-text">
+          mail@htmlacademy.ru
+        </p>
+      </div>
+      <div class="contacts__description">
+        <p class="contacts__description-header">
+          Приезжайте в гости:
+        </p>
+        <p class="contacts__description-text">
+          ул. Большая Конюшенная, 19/8
+        </p>
+      </div>
+    </footer>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.320894615682374!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1457172783170" allowfullscreen></iframe>
+    </div>
   </body>
 </html>
