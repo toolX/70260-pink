@@ -6,15 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle" checked>
+      <input type="checkbox" class="page-logo__input" name="page-logo__toggle" id="page-logo__toggle" checked>
+      <div class="page-logo">
+        <a href="#" class="page-logo__link">
+          <img src="http://placehold.it/75x22" alt="" class="logo-pink">
+        </a>
+        <label for="page-logo__toggle" class="page-logo__toggle"></label>
+      </div>
       <nav class="main-navigation">
-        <label for="page-header__toggle" class="page-header__toggle--close"></label>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="#" class="logo-link">
-              <img src="http://placehold.it/75x22" alt="" class="logo-pink">
-            </a>
-          </li>
           <li class="main-navigation__item  main-navigation__item--active">
             <a href="#">Информация</a>
           </li>
@@ -31,13 +31,12 @@
       </nav>
     </header>
     <div class="main-image">
-      <p class="main-image__header">
+      <h1 class="main-image__header">
         Взгляните на жизнь иначе!
-      </p>
-      <img src="http://placehold.it/150x100" alt="">
+      </h1>
     </div>
     <div class="app-download">
-      <a href="#" class="button app-download__button">
+      <a href="#" class="btn-circle">
         Скачать приложение
       </a>
       <div class="app-download__logos">
@@ -56,38 +55,37 @@
       </p>
     </div>
     <div class="promotion">
-      <p class="promotion__text">
+      <b class="promotion__text">
         Устали от серости мегаполиса?
-      </p>
-      <p class="promotion__text">
+      </b>
+      <b class="promotion__text">
         Нам есть, что вам предложить!
-      </p>
+      </b>
     </div>
     <div class="app-features">
       <div class="feature">
-        <p class="feature__header">
+        <h2 class="feature__header">
           Поднимает настроение
-        </p>
+        </h2>
         <p class="feature__text">
           Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
         </p>
       </div>
       <div class="feature">
-        <p class="feature__header">
+        <h2 class="feature__header">
           Меняет мир вокруг
-        </p>
+        </h2>
         <p class="feature__text">
           Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
         </p>
       </div>
       <div class="feature">
-        <p class="feature__header">
+        <h2 class="feature__header">
           Заводит новых друзей
-        </p>
+        </h2>
         <p class="feature__text">
           Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
         </p>
-        <img src="http://placehold.it/157x320" alt="" class="feature__image">
       </div>
     </div>
     <div class="feedbacks">
@@ -95,26 +93,26 @@
       <input type="radio" class="feedbacks__slider-switcher" name="radio-feedback" id="radio-feedback2">
       <input type="radio" class="feedbacks__slider-switcher" name="radio-feedback" id="radio-feedback3">
       <div class="feedback">
-        <p class="feedback__header">
+        <h2 class="feedback__header">
           Николай Петров
-        </p>
+        </h2>
         <p class="feedback__text">
           &#171Это приложение перевернуло мой мир и позволило по&#x2010новому взглянуть на привычные серые вещи!
           А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187
         </p>
       </div>
       <div class="feedback">
-        <p class="feedback__header">
+        <h2 class="feedback__header">
 
-        </p>
+        </h2>
         <p class="feedback__text">
 
         </p>
       </div>
       <div class="feedback">
-        <p class="feedback__header">
+        <h2 class="feedback__header">
 
-        </p>
+        </h2>
         <p class="feedback__text">
 
         </p>
@@ -131,12 +129,10 @@
       <input type="radio" class="tariffs__slider-switcher" name="radio-tariff" id="radio-tariff3">
       <div class="tariff">
         <div class="tariff__name">
-          <p class="tarrif__name-header">
-            Стандарт
-          </p>
-          <p class="tariff__name-text">
+          Стандарт
+          <span class="tariff__name-text">
             3,99 USD
-          </p>
+          </span>
         </div>
         <div class="tariff__feature">
           <p class="tariff__feature-text">
@@ -156,12 +152,9 @@
       </div>
       <div class="tariff">
         <div class="tariff__name">
-          <p class="tarrif__name-header">
+          <div class="tariff__name-text">
 
-          </p>
-          <p class="tariff__name-text">
-
-          </p>
+          </div>
         </div>
         <div class="tariff__feature">
           <p class="tariff__feature-text">
@@ -181,12 +174,9 @@
       </div>
       <div class="tariff">
         <div class="tariff__name">
-          <p class="tarrif__name-header">
+          <div class="tariff__name-text">
 
-          </p>
-          <p class="tariff__name-text">
-
-          </p>
+          </div>
         </div>
         <div class="tariff__feature">
           <p class="tariff__feature-text">
@@ -215,25 +205,25 @@
         Остались вопросы? Свяжитесь с нами!
       </p>
       <div class="contacts__description">
-        <p class="contacts__description-header">
+        <h2 class="contacts__description-header">
           Звоните:
-        </p>
+        </h2>
         <p class="contacts__description-text">
           +7 (812) 555&#x2010;66&#x2010;66
         </p>
       </div>
       <div class="contacts__description">
-        <p class="contacts__description-header">
+        <h2 class="contacts__description-header">
           Пишите:
-        </p>
+        </h2>
         <p class="contacts__description-text">
           mail@htmlacademy.ru
         </p>
       </div>
       <div class="contacts__description">
-        <p class="contacts__description-header">
+        <h2 class="contacts__description-header">
           Приезжайте в гости:
-        </p>
+        </h2>
         <p class="contacts__description-text">
           ул. Большая Конюшенная, 19/8
         </p>
