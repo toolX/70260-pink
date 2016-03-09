@@ -1,0 +1,10 @@
+.form-message {
+  padding: 25px 6.25% 50px 6.25%;
+  background-color: $bg-color-light;
+  &__header {
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+}
