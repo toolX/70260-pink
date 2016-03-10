@@ -9,15 +9,14 @@
     list-style: none;
   }
   &__item {
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
     text-align: center;
     border-top: 1px solid #495461;
     border-bottom: 1px solid #000000;
     background: #283645;
     a {
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
       margin: 0 auto;
       font-size: 18px;
       font-weight: 700;
