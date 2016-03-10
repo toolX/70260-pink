@@ -1,0 +1,28 @@
+.page-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, .3);
+  &__link {
+    width: 75px;
+    height: 22px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  &__image {
+    width: 75px;
+    height: 22px;
+  }
+  &__btn {
+    width: 50px;
+    height: 24px;
+    margin-right: 20px;
+    background: url("../img/icon-menu-burger.svg") no-repeat center;
+    border: none;
+    outline: none;
+  }
+}

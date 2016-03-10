@@ -1,0 +1,13 @@
+.promotion {
+  padding: 30px 15.5% 60px 15.5%;
+  text-align: center;
+  background-color: $bg-color-light;
+  &__text {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
