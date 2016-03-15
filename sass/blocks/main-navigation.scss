@@ -1,4 +1,7 @@
 .main-navigation {
+  display: none;
+  position: absolute;
+  top: 72px;
   width: 100%;
   &__list {
     width: 100%;
@@ -25,5 +28,17 @@
       text-transform: uppercase;
       text-decoration: none;
     }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .main-navigation {
+    top: 110px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .main-navigation {
+
   }
 }

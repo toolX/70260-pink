@@ -1,16 +1,23 @@
 .page-header {
   width: 100%;
   height: 462px;
-  background-image: url("../img/bg-back-mobile.jpg");
-  background-color: $bg-color-dark;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: auto 462px;
-  &__header {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
+  background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
+  background-color: $bg-color-dark, $bg-color-dark;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 100%, 50% 0;
+  background-size: auto 290px, auto 462px;
+}
+
+@media (min-width: $screen-md) {
+  .page-header {
+    height: 729px;
+    background-position: 75% 100%, 50% 0;
+    background-size: auto 550px, auto 729px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .page-header {
+
   }
 }

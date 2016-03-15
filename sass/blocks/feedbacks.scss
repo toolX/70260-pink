@@ -1,4 +1,7 @@
 .feedbacks {
   padding: 40px 6.25% 50px 6.25%;
   background-color: $bg-color-light;
+  &__slider-switcher {
+    display: none;
+  }
 }

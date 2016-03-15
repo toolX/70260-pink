@@ -1,12 +1,10 @@
 .page-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 320px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  margin-bottom: 20px;
-  background: rgba(0, 0, 0, .3);
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #000000;
+  background: #283645;
+  //background: rgba(0, 0, 0, .3);
   &__link {
     width: 75px;
     height: 22px;
@@ -18,11 +16,31 @@
     height: 22px;
   }
   &__btn {
+    float: right;
     width: 50px;
     height: 24px;
     margin-right: 20px;
     background: url("../img/icon-menu-burger.svg") no-repeat center;
     border: none;
     outline: none;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-logo {
+    padding-top: 43px;
+    padding-bottom: 37px;
+    &__link {
+      margin-left: 40px;
+    }
+    &__btn {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .page-logo {
+
   }
 }

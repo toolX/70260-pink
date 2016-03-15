@@ -1,4 +1,8 @@
 .tariffs {
+  width: 100%;
   padding-top: 65px;
   padding-bottom: 40px;
+  &__slider-switcher {
+    display: none;
+  }
 }

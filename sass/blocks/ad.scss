@@ -1,0 +1,25 @@
+.ad {
+  display: none;
+}
+
+@media (min-width: $screen-md) {
+  .ad {
+    display: block;
+    padding: 60px 5.2% 60px 50%;
+    text-align: left;
+    background-color: $bg-color-light;
+    &__header {
+      display: block;
+      width: 170px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    &__text {
+      width: 295px;
+    }
+    a {
+      color: #d22856;
+    }
+  }
+}

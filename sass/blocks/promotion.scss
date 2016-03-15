@@ -11,3 +11,20 @@
     }
   }
 }
+
+@media (min-width: $screen-md) {
+  .promotion {
+    &__text {
+      margin: 0 auto;
+      font-size: 40px;
+      line-height: 50px;
+      &:first-of-type {
+        width: 600px;
+        margin-bottom: 0;
+      }
+      &:last-of-type {
+        width: 340px;
+      }
+    }
+  }
+}

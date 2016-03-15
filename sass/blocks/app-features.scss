@@ -1,3 +1,16 @@
 .app-features {
-  padding: 10px 9.3% 20px 9.3%;
+  min-height: 730px;
+  padding: 35px 9.3% 20px 9.3%;
+  background-image: url("../img/iphone-screen-mobile.png");
+  background-color: $bg-color-grey;
+  background-repeat: no-repeat;
+  background-position: 50% 110%;
+}
+
+@media (min-width: $screen-md) {
+  .app-features {
+    min-height: 450px;
+    padding-left: 50%;
+    background-position: 10% 110%;
+  }
 }

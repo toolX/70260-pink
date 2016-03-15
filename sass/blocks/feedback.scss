@@ -1,0 +1,41 @@
+.feedback {
+  width: 100%;
+  text-align: center;
+  &__header {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+  }
+  span {
+    display: none;
+  }
+  &__text {
+    display: block;
+    width: 97%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    &__header {
+      order: 2;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    span {
+      display: block;
+      order: 3;
+      line-height: 30px;
+    }
+    &__text {
+      order: 1;
+      width: 90%;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
