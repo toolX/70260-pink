@@ -2,9 +2,9 @@
   @return $padding-px * 100% / $screen-size
 };
 
-@mixin after($bottom, $left, $width, $height, $url) {
+@mixin after($bottom, $left, $width, $height, $url, $transform) {
   &:after {
-    position: absolute;
+    position: relative;
     bottom: $bottom;
     left: $left;
     content: "";
@@ -12,5 +12,6 @@
     width: $width;
     height: $height;
     background: $url no-repeat center;
+    transform: $transform;
   }
 }
