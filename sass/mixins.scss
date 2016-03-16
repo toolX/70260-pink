@@ -1,0 +1,16 @@
+@function get-padding($screen-size, $padding-px) {
+  @return $padding-px * 100% / $screen-size
+};
+
+@mixin after($bottom, $left, $width, $height, $url) {
+  &:after {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    background: $url no-repeat center;
+  }
+}

@@ -1,7 +1,25 @@
 .feedbacks {
-  padding: 40px 6.25% 50px 6.25%;
+  padding: 40px get-padding(320, 20) 50px get-padding(320, 20);
   background-color: $bg-color-light;
   &__slider-switcher {
     display: none;
+  }
+  &__switcher {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    margin: 0 auto;
+    label {
+      width: 5px;
+      height: 5px;
+      margin: 0 3px;
+      cursor: pointer;
+      border-radius: 50%;
+      background: #bec2c7;
+      &:first-of-type {
+        border: 2px solid $bg-color-dark;
+        background: $bg-color-light;
+      }
+    }
   }
 }

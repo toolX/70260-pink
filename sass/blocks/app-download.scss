@@ -1,5 +1,5 @@
 .app-download {
-  padding: 25px 6.25% 20px 6.25%;
+  padding: 25px get-padding(320, 20) 20px get-padding(320, 20);
   background-color: $bg-color-dark;
   &__header {
     display: none;
