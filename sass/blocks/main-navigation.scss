@@ -1,5 +1,5 @@
 .main-navigation {
-  display: none;
+  //display: none;
   position: absolute;
   top: 72px;
   width: 100%;
@@ -38,7 +38,27 @@
 }
 
 @media (min-width: $screen-lg) {
-  .main-navigation {
-
+  .page-index, .page-photo {
+    .main-navigation {
+      position: static;
+      width: 60%;
+      margin-left: 200px;
+      &__list {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      &__item {
+        width: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        a {
+          padding: 0;
+          font-weight: 400;
+          line-height: 18px;
+          text-transform: none;
+        }
+      }
+    }
   }
 }

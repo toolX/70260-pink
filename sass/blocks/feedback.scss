@@ -24,18 +24,39 @@
       order: 2;
       margin-bottom: 0;
       font-size: 20px;
+      font-weight: 700;
       line-height: 30px;
     }
     span {
       display: block;
       order: 3;
+      margin-bottom: 30px;
       line-height: 30px;
     }
     &__text {
       order: 1;
       width: 90%;
+      margin-bottom: 20px;
       font-size: 18px;
+      font-weight: 700;
       line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .feedback {
+    &::before {
+      @include before(0, 50%, url("../img/quotes.png"))
+      width: 79px;
+      height: 63px;
+    }
+    &__header {
+      font-size: 24px;
+    }
+    &__text {
+      width: 60%;
+      margin-top: 30px;
     }
   }
 }

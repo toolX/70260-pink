@@ -28,33 +28,34 @@
     overflow-x: hidden;
   }
   table {
+    width: 700px;
     margin: 0 auto;
+    transform: translateX(-190px);
     border-collapse: collapse;
     th {
-    width: 280px;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    color: $text-color-light;
-    background-color: $bg-color-dark;
-    border-radius: 2px;
-    &:first-of-type {
-      display: none;
-      background-color: $bg-color-grey;
-      border: none;
-    }
-    &:nth-of-type(3) {
-      border-left: 2px solid $bg-color-light;
-      border-right: 2px solid $bg-color-light;
-    }
-    span {
+      padding: 10px;
       font-size: 18px;
-      font-weight: 400;
-    }
+      font-weight: 700;
+      line-height: 30px;
+      color: $text-color-light;
+      background-color: $bg-color-dark;
+      border-radius: 2px;
+      &:first-of-type {
+        display: none;
+        background-color: $bg-color-grey;
+        border: none;
+      }
+      &:nth-of-type(3) {
+        border-left: 2px solid $bg-color-light;
+        border-right: 2px solid $bg-color-light;
+      }
+      span {
+        font-size: 24px;
+        font-weight: 400;
+      }
     }
     td {
-      padding: 5px;
+      padding: 10px 0 10px 10px;
       padding-right: 30px;
       color: $text-color-dark;
       background-color: $bg-color-light;
@@ -67,10 +68,18 @@
       }
     }
     .yes {
-      @include after(0, 95%, 31px, 21px, url(../img/icon-yes.svg), rotate(0deg));
+      &::after {
+        @include after(0, 85%, url("../img/icon-yes.svg"), rotate(0deg));
+        width: 31px;
+        height: 21px;
+      }
     }
     .no {
-      @include after(0, 95%, 27px, 26px, url(../img/icon-no.svg), rotate(0deg));
+      &::after{
+        @include after(0, 85%, url("../img/icon-no.svg"), rotate(0deg));
+        width: 27px;
+        height: 26px;
+      }
     }
   }
 }
@@ -81,17 +90,65 @@
       display: none;
     }
     table {
+      width: auto;
+      transform: translateX(0);
       th {
         width: 160px;
+        font-size: 16px;
+        span {
+          font-size: 18px;
+        }
       }
       th:first-of-type {
         display: table-cell;
       }
+      td {
+        padding-left: 0;
+        padding-right: 0;
+      }
       td:first-of-type {
         display: table-cell;
+        padding-left: 10px;
       }
       td .hidden {
         display: none;
+      }
+      .yes {
+        &::after {
+          @include after(0, 50%, url("../img/icon-yes.svg"), rotate(0deg));
+          width: 31px;
+          height: 21px;
+          transform: translateX(-15px);
+        }
+      }
+      .no {
+        &::after {
+          @include after(0, 50%, url("../img/icon-no.svg"), rotate(0deg));
+          width: 27px;
+          height: 26px;
+          transform: translateX(-14px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .tariffs {
+    table {
+      th {
+        width: 220px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        span {
+          font-size: 24px;
+        }
+      }
+      td:first-of-type {
+        padding: 17px 0 17px 25px;
       }
     }
   }

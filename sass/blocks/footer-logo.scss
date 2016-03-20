@@ -1,0 +1,17 @@
+.footer-logo {
+  width: 147px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $screen-md) {
+  .footer-logo {
+    width: 33%;
+    margin-bottom: 20px;
+    &__image {
+      display: block;
+      margin: 0 auto;
+      width: 147px;
+      height: 40px;
+    }
+  }
+}

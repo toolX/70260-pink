@@ -1,4 +1,33 @@
+@media (max-width: $screen-md) {
+  .page-index {
+    .page-footer {
+      display: none;
+    }
+  }
+}
+
 .page-footer {
-  padding: 30px 21.8% 40px 21.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 45px;
   background-color: $bg-color-light;
+}
+
+@media (min-width: $screen-md) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: $bg-color-light;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }

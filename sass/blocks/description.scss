@@ -1,5 +1,30 @@
 .description {
-  padding: 35px 9.3% 45px 9.3%;
+  padding: 60px 0 60px 0;
   background-color: $bg-color-light;
-  text-align: center;
+  &__text {
+    display: block;
+    width: 77%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .description {
+    padding-top: 105px;
+    padding-bottom: 85px;
+    &__text {
+      width: 65%;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .description {
+    &__text {
+      width: 50%;
+    }
+  }
 }

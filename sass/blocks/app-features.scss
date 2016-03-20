@@ -1,6 +1,6 @@
 .app-features {
-  min-height: 730px;
-  padding: 35px 9.3% 20px 9.3%;
+  min-height: 700px;
+  padding: 35px 0 20px 0;
   background-image: url("../img/iphone-screen-mobile.png");
   background-color: $bg-color-grey;
   background-repeat: no-repeat;
@@ -9,8 +9,18 @@
 
 @media (min-width: $screen-md) {
   .app-features {
-    min-height: 450px;
+    min-height: 380px;
     padding-left: 50%;
     background-position: 10% 110%;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .app-features {
+    display: flex;
+    height: 610px;
+    padding-left: get-padding(1200, 130);
+    padding-right: get-padding(1200, 130);
+    background: none;
   }
 }
