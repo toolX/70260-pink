@@ -14,15 +14,8 @@ body {
     background: #f2f2f2;
 }
 
-@media (min-width: $screen-md) {
-  body {
-    min-width: 768px;
-  }
-}
-
 @media (min-width: $screen-lg) {
   body {
-    max-width: 1200px;
     font-size: 18px;
   }
 }

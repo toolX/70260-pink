@@ -6,8 +6,8 @@
     <title>Пинк: Фотографии</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body class="page-photo">
-    <header class="page-header">
+  <body>
+    <header class="page-header  page-header--sm">
       <div class="page-logo">
         <a href="#" class="page-logo__link">
           <svg class="page-logo__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -46,7 +46,7 @@
         </nav>
         <button class="btn  page-logo__btn"></button>
       </div>
-      <h1 class="page-header__header">
+      <h1 class="page-header__header  page-header--sm__header">
         Фотографии пользователей
       </h1>
     </header>
@@ -216,8 +216,8 @@
       </p>
     </div>
     <div class="user-photo__outer">
-      <div class="user-photo">
-        <form action="/echo" method="post">
+      <form action="/echo" method="post">
+        <div class="user-photo">
           <figure class="user-photo__image">
             <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="">
           </figure>
@@ -250,8 +250,8 @@
               <input type="button" class="btn-circle  user-photo__btn" value="Отмена">
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
     <footer class="page-footer">
       <div class="footer-logo">

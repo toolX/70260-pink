@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color-light;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+}
+
+.form-message__btn {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: $screen-md) {
+  .btn {
+    float: left;
+    width: 39%;
+  }
+}

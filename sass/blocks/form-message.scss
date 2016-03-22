@@ -1,10 +1,43 @@
 .form-message {
-  padding: 25px 6.25% 50px 6.25%;
+  padding: 25px get-padding(320, 20) 50px get-padding(320, 20);
   background-color: $bg-color-light;
+  box-shadow:
+      0 -12px 5px -10px rgba(221,221,221,.3),
+      0 20px 5px -10px rgba(221,221,221,.3);
   &__header {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
   }
   &__text {
+    margin-bottom: 40px;
     text-align: center;
+  }
+  &--error {
+    display: none;
+    position: absolute;
+    top: 1170px;
+  }
+  &--ok {
+    display: none;
+    position: absolute;
+    top: 1650px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    .form-message__text {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .form-message__inner {
+      display: flex;
+      align-items: center;
+      height: 163px;
+      background: $bg-color-grey;
+    }
   }
 }

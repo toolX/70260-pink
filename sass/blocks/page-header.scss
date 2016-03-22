@@ -8,22 +8,20 @@
   background-size: auto 290px, auto 462px;
 }
 
-.page-photo {
-  .page-header {
-    height: 235px;
-    background-image: url("../img/bg-back-mobile.jpg");
-    background-position: 50% 0;
-    background-size: 700px 462px;
-    &__header {
-      display: block;
-      width: 70%;
-      margin: 0 auto;
-      font-size: 24px;
-      line-height: 30px;
-      font-weight: 400;
-      text-align: center;
-      color: $text-color-light;
-    }
+.page-header--sm {
+  height: 235px;
+  background-image: url("../img/bg-back-mobile.jpg");
+  background-position: 50% 0;
+  background-size: 700px 462px;
+  &__header {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: $text-color-light;
   }
 }
 
@@ -42,6 +40,13 @@
       }
     }
   }
+  .page-header--sm {
+    height: 440px;
+    &__header {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
 }
 
 @media (min-width: $screen-lg) {
@@ -54,6 +59,12 @@
       &__header {
         width: 50%;
       }
+    }
+  }
+  .page-header--sm {
+    height: 395px;
+    &__header {
+      width: 50%;
     }
   }
 }
