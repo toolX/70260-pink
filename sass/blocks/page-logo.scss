@@ -49,11 +49,10 @@
     .page-logo {
       display: flex;
       align-items: center;
+      padding-left: get-padding(1200, 130);
+      padding-right: get-padding(1200, 130);
       background: rgba(0, 0, 0, .3);
       border-bottom: none;
-      &__image {
-        margin-left: 100px;
-      }
       &__btn {
         display: none;
       }
