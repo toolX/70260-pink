@@ -1,0 +1,20 @@
+.footer-copyright {
+  width: 50%;
+  display: inline-block;
+  font-style: normal;
+  text-align: center;
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    margin-left: 10px;
+    background: url("../img/logo-htmlacademy.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .footer-copyright {
+    width: 33%;
+  }
+}

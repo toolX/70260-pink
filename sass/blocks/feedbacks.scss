@@ -1,4 +1,44 @@
 .feedbacks {
-  padding: 40px 6.25% 50px 6.25%;
+  padding: 40px 0 50px 0;
   background-color: $bg-color-light;
+  &__slider-switcher {
+    display: none;
+  }
+  &__switcher {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    margin: 0 auto;
+    label {
+      width: 5px;
+      height: 5px;
+      margin: 0 3px;
+      cursor: pointer;
+      border-radius: 50%;
+      background: #bec2c7;
+      &:first-of-type {
+        border: 2px solid $bg-color-dark;
+        background: $bg-color-light;
+      }
+    }
+  }
+  &::after {
+    @include after(-50px, 0, url("../img/bg-triangle-white.svg"), rotate(180deg));
+    width: 100%;
+    height: 25px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .feedbacks {
+    padding-top: 65px;
+    &__switcher {
+      width: 80px;
+      label {
+        width: 7px;
+        height: 7px;
+        margin: 0 8px;
+      }
+    }
+  }
 }

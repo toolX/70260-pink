@@ -1,0 +1,29 @@
+.footer-links {
+  display: flex;
+  width: 180px;
+  min-height: 52px;
+  padding-left: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  &__item {
+    width: 52px;
+    height: 51px;
+    margin-right: 12px;
+    font-size: 0;
+    background: url("../img/circle-footer.png") no-repeat center;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      width: 52px;
+      height: 51px;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .footer-links {
+    margin-bottom: 0;
+  }
+}

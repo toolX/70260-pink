@@ -1,0 +1,42 @@
+.ad {
+  display: none;
+}
+
+@media (min-width: $screen-md) {
+  .ad {
+    display: block;
+    padding: 90px 5.2% 60px 50%;
+    text-align: left;
+    background-image: url("../img/24.png");
+    background-color: $bg-color-light;
+    background-repeat: no-repeat;
+    background-position: 10% 60%;
+    &__header {
+      display: block;
+      width: 170px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    &__text {
+      width: 295px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #d22856;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .ad {
+    padding-left: 40%;
+    &__header {
+      width: 100%;
+      line-height: 30px;
+    }
+    &__text {
+      width: 93.5%;
+    }
+  }
+}

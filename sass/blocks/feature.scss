@@ -1,0 +1,70 @@
+.feature {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  &__header {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #000000;
+  }
+  &__text {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 700;
+  }
+  &:last-of-type {
+    .feature__text {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .feature {
+    text-align: left;
+    &__text {
+      width: 80%;
+      margin: 0;
+      font-weight: 400;
+    }
+    &-last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .feature {
+    height: 100%;
+    text-align: center;
+    &::before {
+      @include before(0, 50%, url("../img/iphone-screen-mobile.png"));
+      transform: translateX(-93px);
+      width: 186px;
+      height: 382px;
+    }
+    &__header {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    &__text {
+      width: 75%;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &:last-of-type {
+      .feature__text {
+        width: 75%;
+      }
+    }
+  }
+}

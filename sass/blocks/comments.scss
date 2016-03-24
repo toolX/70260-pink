@@ -1,4 +1,24 @@
 .comments {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  display: flex;
+  flex-direction: column;
+  padding-left: get-padding(320, 20);
+  padding-right: get-padding(320, 20);
+  background-color: $bg-color-light;;
+}
+
+@media (min-width: $screen-md) {
+  .comments {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: get-padding(768, 40);
+    padding-right: get-padding(768, 40);
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .comments {
+    padding-left: get-padding(1200, 130);
+    padding-right: get-padding(1200, 130);
+  }
 }

@@ -1,5 +1,52 @@
 .description {
-  padding: 35px 9.3% 45px 9.3%;
+  padding: 60px 0 60px 0;
   background-color: $bg-color-light;
-  text-align: center;
+  &__text {
+    display: block;
+    width: 77%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+    .screen-lg {
+      display: none;
+    }
+  }
+}
+
+.description--sm {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  &__text {
+    width: 80%;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .description,
+  .description--sm {
+    padding-top: 105px;
+    padding-bottom: 85px;
+    &__text {
+      width: 65%;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .description {
+    &__text {
+      width: 80%;
+    }
+  }
+  .description--sm {
+    padding-top: 95px;
+    padding-bottom: 70px;
+    &__text {
+      width: 55%;
+      .screen-lg {
+        display: inline;
+      }
+    }
+  }
 }

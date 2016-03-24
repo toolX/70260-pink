@@ -1,0 +1,20 @@
+.btn-circle {
+  display: block;
+  padding: 14px 20px 17px 20px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: $text-color-light;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+@media (min-width: $screen-lg) {
+  .btn-circle {
+    margin-bottom: 65px;
+  }
+}
