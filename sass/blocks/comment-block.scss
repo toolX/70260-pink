@@ -54,7 +54,6 @@
     text-transform: uppercase;
     color: #d22856;
     &:before {
-      @include before(2px, -15px, url("../img/icon-heart.svg"));
       display: inline-block;
       width: 14px;
       height: 13px;
@@ -72,7 +71,6 @@
         display: none;
       }
       &:after {
-        @include after(-2px, 150px, url("../img/icon-heart.svg"), rotate(0deg));
         display: inline-block;
         width: 14px;
         height: 13px;

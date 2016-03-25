@@ -1,26 +1,46 @@
 .page-logo {
-  width: 100%;
-  padding-top: 24px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #000000;
-  background: #283645;
+  max-width: 100%;
+  padding: 22px 0 15px 0;
+  background: rgba(0, 0, 0, .3);
+  //padding: 24px get-padding(320, 20) 18px get-padding(320, 20);
+  //border-bottom: 1px solid #000000;
+  //background: #283645;
   &__link {
     width: 75px;
     height: 22px;
-    margin-left: 20px;
+    margin-left: get-padding(320, 20);
     text-decoration: none;
+  }
+  &__image-tablet,
+  &__image-desktop {
+    display: none;
   }
   &__image {
     width: 75px;
     height: 22px;
+    &  path {
+      fill: $menu-logo;
+    }
+  }
+  &__image:hover {
+    &  path {
+      fill: $menu-logo-hvr;
+    }
+  }
+  &__image:active {
+    &  path {
+      fill: $menu-logo-down;
+    }
   }
   &__btn {
     float: right;
     width: 50px;
     height: 24px;
-    margin-right: 20px;
+    padding: 0;
+    margin-right: get-padding(320, 20);
     background: url("../img/icon-menu-burger.svg") no-repeat center;
     border: none;
+    border-radius: 0;
     outline: none;
   }
 }
@@ -33,29 +53,70 @@
 
 @media (min-width: $screen-md) {
   .page-logo {
-    padding-top: 43px;
-    padding-bottom: 37px;
+    padding-top: 27px;
+    padding-bottom: 36px;
     &__link {
+      display: inline-block;
+      width: 147px;
+      height: 40px;
       margin-left: 40px;
     }
+    &__image {
+      display: none;
+    }
+    &__image-tablet {
+      display: inline-block;
+      width: 147px;
+      height: 40px;
+    }
+    &__image-tablet:hover {
+      &  path {
+        fill: $menu-logo-hvr;
+      }
+    }
+    &__image-tablet:active {
+      &  path {
+        fill: $menu-logo-down;
+      }
+    }
     &__btn {
+      display: inline-block;
+      vertical-align: bottom;
       margin-right: 40px;
     }
   }
 }
 
 @media (min-width: $screen-lg) {
-  .page-index, .page-photo {
-    .page-logo {
-      display: flex;
-      align-items: center;
-      padding-left: get-padding(1200, 130);
-      padding-right: get-padding(1200, 130);
-      background: rgba(0, 0, 0, .3);
-      border-bottom: none;
-      &__btn {
-        display: none;
+  .page-logo {
+    display: flex;
+    align-items: center;
+    padding-left: get-padding(1200, 130);
+    padding-right: get-padding(1200, 130);
+    padding-bottom: 43px;
+    background: rgba(0, 0, 0, .3);
+    border-bottom: none;
+    &__link {
+      margin-left: 0;
+    }
+    &__image-tablet {
+      display: none;
+    }
+    &__image-desktop {
+      display: inline-block;
+    }
+    &__image-desktop:hover {
+      &  path {
+        fill: $menu-logo-hvr;
       }
+    }
+    &__image-desktop:active {
+      &  path {
+        fill: $menu-logo-down;
+      }
+    }
+    &__btn {
+      display: none;
     }
   }
 }

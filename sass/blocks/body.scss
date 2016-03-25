@@ -16,6 +16,7 @@ body {
 
 @media (min-width: $screen-lg) {
   body {
+    max-width: 1200px;
     font-size: 18px;
   }
 }

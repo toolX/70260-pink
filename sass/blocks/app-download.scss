@@ -1,5 +1,5 @@
 .app-download {
-  padding: 25px get-padding(320, 20) 20px get-padding(320, 20);
+  padding: 25px get-padding(320, 20) 25px get-padding(320, 20);
   background-color: $bg-color-dark;
   &__header {
     display: none;
@@ -10,6 +10,7 @@
     align-items: baseline;
     width: 210px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   &__link {
     width: 47px;
@@ -29,7 +30,7 @@
   }
   &__text {
     display: block;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
     color: $text-color-light;
@@ -39,9 +40,9 @@
 @media (min-width: $screen-md) {
   .app-download {
     position: absolute;
-    top: 180px;
+    top: 178px;
     left: 50%;
-    transform: translateX(-400px);
+    transform: translateX(-355px);
     width: 300px;
     height: 420px;
     background-color: rgba(0, 0, 0, 0);
@@ -70,15 +71,16 @@
 
 @media (min-width: $screen-lg) {
   .app-download {
-    transform: translateX(-550px);
+    top: 193px;
+    transform: translateX(-554px);
     &__header {
       width: 300px;
-      margin-bottom: 50px;
+      margin-bottom: 52px;
       font-size: 50px;
       line-height: 60px;
     }
     &__icons {
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
   }
 }

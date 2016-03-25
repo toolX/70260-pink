@@ -4,39 +4,110 @@
 
 @media (min-width: $screen-md) {
   .ad {
-    display: block;
-    padding: 90px 5.2% 60px 50%;
-    text-align: left;
-    background-image: url("../img/24.png");
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 30px;
     background-color: $bg-color-light;
-    background-repeat: no-repeat;
-    background-position: 10% 60%;
-    &__header {
-      display: block;
-      width: 170px;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 36px;
+    &-image {
+      width: 46%;
+      &__inner {
+        position: relative;
+        width: 240px;
+        height: 277px;
+        margin: 0 auto;
+      }
+      &__text {
+        position: absolute;
+        top: 75px;
+        left: 65px;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 150px;
+        color: #d22856;
+      }
+      &__timer {
+        position: absolute;
+        width: 240px;
+        height: 277px;
+        fill: #dedede;
+      }
+      &__circle {
+        position: absolute;
+        top: 55px;
+        left: 19px;
+        width: 203px;
+        height: 204px;
+        fill: #d22856;
+      }
     }
-    &__text {
-      width: 295px;
-      margin-bottom: 10px;
-    }
-    a {
-      color: #d22856;
+    &-description {
+      width: 50%;
+      &__header {
+        display: block;
+        width: 180px;
+        margin-top: 37px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+      &__text {
+        width: 295px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      a {
+        color: #d22856;
+      }
     }
   }
 }
 
 @media (min-width: $screen-lg) {
   .ad {
-    padding-left: 40%;
-    &__header {
-      width: 100%;
-      line-height: 30px;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 65px;
+    background-color: $bg-color-grey;
+    &-image {
+      width: 36%;
+      &__inner {
+        width: 298px;
+        height: 345px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+      &__text {
+        top: 95px;
+        left: 80px;
+        font-size: 120px;
+        line-height: 187px;
+      }
+      &__timer {
+        width: 298px;
+        height: 345px;
+      }
+      &__circle {
+        top: 70px;
+        left: 23px;
+        width: 253px;
+        height: 253px;
+      }
     }
-    &__text {
-      width: 93.5%;
+    &-description {
+      padding-top: 60px;
+      width: 59%;
+      &__header {
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 30px;
+      }
+      &__text {
+        width: 75%;
+        margin-bottom: 30px;
+        line-height: 30px;
+      }
     }
   }
 }

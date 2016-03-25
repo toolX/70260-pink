@@ -1,16 +1,30 @@
 .btn-circle {
   display: block;
-  padding: 14px 20px 17px 20px;
+  padding: 14px 0 17px 0;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
   color: $text-color-light;
-  border: 3px solid white;
+  border: 3px solid $bg-color-light;
   border-radius: 30px;
+}
+.btn-circle:hover {
+  color: $text-color;
+  background-color: $bg-color-light;
+}
+.btn-circle:active {
+  color: $text-color-grey;
+  background-color: $bg-color-light;
+}
+
+@media (min-width: $screen-md) {
+  .btn-circle {
+    margin-bottom: 46px;
+  }
 }
 
 @media (min-width: $screen-lg) {

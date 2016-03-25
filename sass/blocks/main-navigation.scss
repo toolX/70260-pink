@@ -1,5 +1,5 @@
 .main-navigation {
-  //display: none;
+  display: none;
   position: absolute;
   top: 72px;
   width: 100%;
@@ -24,9 +24,15 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 32px;
-      color: #ffffff;
+      color: $mobile-menu;
       text-transform: uppercase;
       text-decoration: none;
+    }
+    a:hover {
+      color: $mobile-menu-hvr;
+    }
+    a:active {
+      color: $mobile-menu-down;
     }
   }
 }
@@ -39,11 +45,13 @@
 
 @media (min-width: $screen-lg) {
   .main-navigation {
+    display: inline-block;
     position: static;
-    width: 60%;
+    width: 80%;
     &__list {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
+      margin-left: 17.5%;
     }
     &__item {
       width: 20%;
@@ -57,6 +65,17 @@
         line-height: 18px;
         text-transform: none;
       }
+      a:hover {
+        color: $text-color-light;
+        border-bottom: 2px solid $text-color-light;
+      }
+      a:active {
+        opacity: .3;
+        border-bottom: none;
+      }
+    }
+    &__item:not(:first-child) {
+      margin-left: 20px;
     }
   }
 }

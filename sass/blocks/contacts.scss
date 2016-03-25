@@ -1,9 +1,10 @@
 .contacts {
-  padding: 20px 12.5% 20px 12.5%;
+  padding: 20px get-padding(320, 40) 20px get-padding(320, 40);
   background-color: $bg-color-light;
   &__header {
     display: block;
     width: 95%;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 24px;
   }
@@ -11,10 +12,12 @@
     width: 100%;
     text-align: center;
     &-header {
+      margin-bottom: 5px;
       font-size: 18px;
       color: #000000;
     }
     &-text {
+      margin-top: 0;
       font-size: 24px;
       color: #d22856;
     }
@@ -25,6 +28,7 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 45px;
     padding-left: 0;
     padding-right: 0;
     &__header {
@@ -33,11 +37,24 @@
       font-size: 40px;
       line-height: 50px;
     }
+    &__description-header {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    &__description-text {
+      margin-bottom: 10px;
+    }
     &__description--phone {
       width: 50%;
     }
     &__description--email {
       width: 50%;
+    }
+    &__description--address {
+      .contacts__description-text {
+        width: 40%;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -50,12 +67,15 @@
       padding-left: 30%;
       padding-right: 30%;
       margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 60px;
     }
     &__description--phone {
       order: 2;
       width: 33%;
       .contacts__description-text {
         display: block;
+        line-height: 30px;
       }
     }
     &__description--email {
@@ -63,6 +83,7 @@
       width: 33%;
       .contacts__description-text {
         display: block;
+        line-height: 30px;
       }
     }
     &__description--address {
@@ -72,6 +93,7 @@
         display: block;
         width: 70%;
         margin: 0 auto;
+        line-height: 30px;
       }
     }
   }
