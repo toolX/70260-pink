@@ -1,7 +1,7 @@
 .user-photo {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 41px 0;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -10,59 +10,62 @@
     width: 280px;
     height: 374px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 41px;
   }
   &__filters {
-    .filters-list {
-      width: 250px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding-left: 0;
-      list-style: none;
-      &__item {
-        display: inline-block;
-        input {
-          display: none;
-        }
-        .filters-item__btn {
-          display: block;
-          cursor: pointer;
-        }
-        .crop-btn {
-          width: 44px;
-          height: 44px;
-          background: url("../img/icon-editor-crop.svg") no-repeat center;
-        }
-        .fill-btn {
-          width: 48px;
-          height: 43px;
-          background: url("../img/icon-editor-fill.svg") no-repeat center;
-        }
-        .contrast-btn {
-          width: 32px;
-          height: 32px;
-          background: url("../img/icon-editor-contrast.svg") no-repeat center;
-        }
-      }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__item {
+    input {
+      display: none;
     }
+  }
+  &__btn {
+    display: block;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: $user-photo-icon;
+  }
+  &__icon:hover {
+    fill: $user-photo-icon-hvr;
+  }
+  &__icon:active {
+    fill: $user-photo-icon-down;
+  }
+  .crop-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .fill-btn {
+    width: 48px;
+    height: 43px;
+  }
+  .contrast-btn {
+    width: 32px;
+    height: 32px;
   }
   &__range-controls {
     width: 100%;
     height: 20px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     border-bottom: 1px solid #dddfe0;
-    .scale {
-      width: 260px;
+    &  .scale {
+      width: 240px;
       margin: 0 auto;
       border-bottom: 2px solid $text-color-dark;
-      .bar {
+      &  .bar {
         position: relative;
-        top: 7px;
-        left: 80%;
+        top: 8px;
+        left: 80.5%;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -70,20 +73,45 @@
         background-color: $bg-color-grey;
         cursor: pointer;
       }
+      &  .bar:hover {
+        background-color: #d22856;
+      }
     }
   }
   &__form-buttons {
     display: flex;
     flex-direction: column;;
-    .user-photo__btn {
-      width: 280px;
-      margin: 0 auto;
-      margin-bottom: 10px;
-      font-weight: 700;
-      color: #d22856;
-      background-color: transparent;
-      border-color: #d22856;
-    }
+  }
+  &__form-btn {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #d22856;
+    background-color: transparent;
+    border-color: #d22856;
+  }
+  &__form-btn--cancel {
+    margin-bottom: 0;
+    color: $user-photo-btn-cancel;
+    border-color: $user-photo-btn-cancel;
+  }
+  &__form-btn:hover {
+    color: $text-color-light;
+    background-color: $user-photo-btn-hvr;
+  }
+  &__form-btn:active {
+    color: rgba(255, 255, 255, .3);
+  }
+  &__form-btn--cancel:hover {
+    color: $user-photo-btn-cancel-hvr;
+    border-color: $user-photo-btn-cancel-hvr;
+    background-color: transparent;
+  }
+  &__form-btn--cancel:active {
+    color: #cbced2;
+    border-color: $user-photo-btn-cancel-hvr;
+    background-color: $user-photo-btn-cancel-hvr;
   }
 }
 

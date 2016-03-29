@@ -1,9 +1,9 @@
 .feature {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-align: center;
   &__header {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 18px;
     font-weight: 700;
     line-height: 10px;
@@ -13,7 +13,7 @@
     display: block;
     width: 80%;
     margin: 0 auto;
-    font-weight: 700;
+    font-weight: 400;
   }
   &:last-of-type {
     .feature__text {
@@ -25,6 +25,7 @@
 @media (min-width: $screen-md) {
   .feature {
     text-align: left;
+    margin-bottom: 41px;
     &__text {
       width: 88%;
       margin: 0;
@@ -39,8 +40,9 @@
 @media (min-width: $screen-lg) {
   .feature {
     position: relative;
-    height: 0;
+    height: 250px;
     padding-top: 3px;
+    margin-bottom: 0;
     text-align: center;
     &:before {
       position: absolute;
@@ -67,20 +69,32 @@
       font-size: 18px;
       line-height: 30px;
     }
-    &:last-of-type {
-      .feature__text {
-        width: 75%;
-      }
+  }
+  .feature:nth-child(1) {
+    width: 32%;
+    .feature__text {
+      width: 80%;
     }
   }
   .feature:nth-child(2) {
+    width: 36%;
     &:before {
       background: url("../img/iphone-screen-desktop-2@1x.png") no-repeat center;
     }
+    .feature__text {
+      width: 70%;
+    }
   }
   .feature:nth-child(3) {
+    width: 32%;
     &:before {
       background: url("../img/iphone-screen-desktop-3@1x.png") no-repeat center;
+    }
+    .feature__header {
+      width: 100%;
+    }
+    .feature__text {
+      width: 80%;
     }
   }
 }

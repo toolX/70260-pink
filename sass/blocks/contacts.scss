@@ -28,7 +28,9 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 45px;
+    padding-bottom: 30px;
     padding-left: 0;
     padding-right: 0;
     &__header {
@@ -39,16 +41,16 @@
     }
     &__description-header {
       margin-top: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     &__description-text {
       margin-bottom: 10px;
     }
     &__description--phone {
-      width: 50%;
+      width: 46%;
     }
     &__description--email {
-      width: 50%;
+      width: 46%;
     }
     &__description--address {
       .contacts__description-text {
@@ -61,18 +63,26 @@
 
 @media (min-width: $screen-lg) {
   .contacts {
+    padding-top: 63px;
+    padding-bottom: 20px;
+    justify-content: center;
     &__header {
       order: 1;
       width: 100%;
       padding-left: 30%;
       padding-right: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
       font-size: 50px;
       line-height: 60px;
     }
+    &__description {
+      .contacts__description-header {
+        margin-bottom: 23px;
+      }
+    }
     &__description--phone {
       order: 2;
-      width: 33%;
+      width: 27%;
       .contacts__description-text {
         display: block;
         line-height: 30px;
@@ -80,7 +90,7 @@
     }
     &__description--email {
       order: 4;
-      width: 33%;
+      width: 27%;
       .contacts__description-text {
         display: block;
         line-height: 30px;
@@ -88,7 +98,7 @@
     }
     &__description--address {
       order: 3;
-      width: 33%;
+      width: 26.5%;
       .contacts__description-text {
         display: block;
         width: 70%;

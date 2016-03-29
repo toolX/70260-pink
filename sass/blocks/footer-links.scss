@@ -4,7 +4,7 @@
   min-height: 52px;
   padding-left: 0;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   &__item {
     width: 52px;
     height: 51px;
@@ -63,5 +63,13 @@
 @media (min-width: $screen-md) {
   .footer-links {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .footer-links {
+    width: 33%;
+    margin: 0;
+    justify-content: center;
   }
 }

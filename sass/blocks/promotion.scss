@@ -1,5 +1,5 @@
 .promotion {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 18px 0;
   text-align: center;
   background-color: $bg-color-light;
   &__text {
@@ -7,10 +7,10 @@
     width: 75%;
     margin: 0 auto;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 30px;
     &:first-of-type {
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
   }
 }

@@ -11,32 +11,23 @@
     padding-bottom: 30px;
     background-color: $bg-color-light;
     &-image {
+      position: relative;
       width: 46%;
-      &__inner {
-        position: relative;
-        width: 240px;
-        height: 277px;
-        margin: 0 auto;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &__text {
-        position: absolute;
-        top: 75px;
-        left: 65px;
         font-size: 96px;
         font-weight: 700;
         line-height: 150px;
         color: #d22856;
       }
       &__timer {
-        position: absolute;
         width: 240px;
         height: 277px;
         fill: #dedede;
       }
       &__circle {
-        position: absolute;
-        top: 55px;
-        left: 19px;
         width: 203px;
         height: 204px;
         fill: #d22856;
@@ -67,8 +58,8 @@
 @media (min-width: $screen-lg) {
   .ad {
     justify-content: space-between;
-    padding-top: 0;
-    padding-bottom: 65px;
+    padding-top: 19px;
+    padding-bottom: 68px;
     background-color: $bg-color-grey;
     &-image {
       width: 36%;
@@ -97,16 +88,21 @@
     }
     &-description {
       padding-top: 60px;
-      width: 59%;
+      width: 58.6%;
       &__header {
         width: 100%;
-        margin-bottom: 30px;
+        margin-top: 36px;
+        margin-bottom: 24px;
         line-height: 30px;
       }
       &__text {
-        width: 75%;
-        margin-bottom: 30px;
+        width: 80%;
+        margin-bottom: 33px;
+        font-weight: 400;
         line-height: 30px;
+      }
+      a {
+        font-weight: 400;
       }
     }
   }

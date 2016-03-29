@@ -1,25 +1,25 @@
 .page-header {
   width: 100%;
-  height: 462px;
+  height: 458px;
   background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
   background-color: $bg-color-dark, $bg-color-dark;
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100%, 50% 0;
-  background-size: auto 290px, auto 462px;
+  background-size: auto 290px, auto 458px;
 }
 
 .page-header--sm {
-  height: 235px;
+  height: 237px;
   background-image: url("../img/bg-back-mobile.jpg");
-  background-position: 50% 0;
-  background-size: 700px 462px;
+  background-position: 50% -3px;
+  background-size: auto 462px;
   &__header {
     display: block;
     width: 70%;
     margin: 0 auto;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     color: $text-color-light;
   }
@@ -38,17 +38,11 @@
     background-position: 75% 100%, 50% 0;
     background-size: auto 550px, auto 729px;
   }
-  .page-photo {
-    .page-header {
-      height: 729px;
-      &__header {
-        font-size: 50px;
-        line-height: 60px;
-      }
-    }
-  }
   .page-header--sm {
     height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 0;
+    background-size: auto 729px;
     &__header {
       font-size: 50px;
       line-height: 60px;

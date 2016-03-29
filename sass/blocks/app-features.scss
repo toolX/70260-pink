@@ -1,11 +1,11 @@
 .app-features {
   position: relative;
   min-height: 700px;
-  padding: 85px 0 20px 0;
+  padding: 85px 0 12px 0;
   background-image: url("../img/iphone-screen-mobile.png");
   background-color: $bg-color-grey;
   background-repeat: no-repeat;
-  background-position: 50% 110%;
+  background-position: 50% 109%;
   &:before {
     position: absolute;
     top: 0;
@@ -48,9 +48,10 @@
 @media (min-width: $screen-lg) {
   .app-features {
     display: flex;
-    height: 200px;
-    padding-top: 350px;
-    padding-bottom: 20px;
+    align-items: flex-end;
+    height: 400px;
+    padding-top: 203px;
+    padding-bottom: 0;
     padding-left: get-padding(1200, 130);
     padding-right: get-padding(1200, 130);
     background: none;

@@ -1,13 +1,14 @@
 .feedbacks {
-  padding: 25px 0 20px 0;
+  padding: 27px 0 30px 0;
   background-color: $bg-color-light;
   &__slider-switcher {
     display: none;
   }
   &__switcher {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 75px;
+    width: 60px;
     margin: 0 auto;
     label {
       width: 6px;
@@ -20,9 +21,6 @@
         background: $bg-color-light;
       }
     }
-    label:not(:first-of-type) {
-      margin-left: 10px;
-    }
     label:hover {
       background: #7e868f;
     }
@@ -34,9 +32,10 @@
 
 @media (min-width: $screen-md) {
   .feedbacks {
-    padding-top: 35px;
+    padding-top: 67px;
+    padding-bottom: 17px;
     &__switcher {
-      width: 80px;
+      width: 75px;
       label {
         width: 7px;
         height: 7px;
@@ -49,10 +48,11 @@
 @media (min-width: $screen-lg) {
   .feedbacks {
     position: relative;
-    padding-top: 190px;
+    padding-top: 185px;
+    padding-bottom: 5px;
     &:before {
       position: absolute;
-      top: 60px;
+      top: 72px;
       left: 50%;
       margin-left: -40px;
       content: "";

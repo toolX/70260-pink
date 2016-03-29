@@ -38,10 +38,19 @@
     height: 24px;
     padding: 0;
     margin-right: get-padding(320, 20);
-    background: url("../img/icon-menu-burger.svg") no-repeat center;
     border: none;
     border-radius: 0;
     outline: none;
+  }
+  &__btn:hover {
+    &  path {
+      fill: $menu-btn-hvr;
+    }
+  }
+  &__btn:active {
+    &  path {
+      fill: $menu-btn-down;
+    }
   }
 }
 
@@ -81,8 +90,14 @@
     }
     &__btn {
       display: inline-block;
-      vertical-align: bottom;
+      vertical-align: top;
+      margin-top: 17px;
       margin-right: 40px;
+    }
+  }
+  .page-header--sm {
+    &  .page-logo {
+      margin-bottom: 70px;
     }
   }
 }
@@ -104,6 +119,8 @@
     }
     &__image-desktop {
       display: inline-block;
+      width: 147px;
+      height: 40px;
     }
     &__image-desktop:hover {
       &  path {

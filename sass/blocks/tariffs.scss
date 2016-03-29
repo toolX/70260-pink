@@ -1,7 +1,7 @@
 .tariffs {
   position: relative;
   width: 100%;
-  padding-top: 105px;
+  padding-top: 103px;
   padding-bottom: 60px;
   &:before {
     position: absolute;
@@ -52,10 +52,11 @@
     text-transform: uppercase;
     width: 700px;
     margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
     border-collapse: collapse;
     &-header {
-      padding-top: 18px;
-      padding-bottom: 18px;
+      width: 280px;
       font-size: 18px;
       font-weight: 700;
       line-height: 30px;
@@ -67,15 +68,15 @@
         background-color: $bg-color-grey;
         border: none;
       }
-      &:nth-of-type(3) {
+      &__wrapper {
         position: relative;
-        border-left: 2px solid $bg-color-light;
-        border-right: 2px solid $bg-color-light;
+        padding-top: 18px;
+        padding-bottom: 18px;
       }
-      &:nth-of-type(3):before {
+      &__wrapper--ribbon:before {
         position: absolute;
         top: 0;
-        left: -2px;
+        left: 0;
         display: block;
         content: "";
         width: 74px;
@@ -83,6 +84,10 @@
         background-image: url("../img/bg-hit.svg");
         background-repeat: no-repeat;
         background-position: center;
+      }
+      &:nth-of-type(3) {
+        border-left: 2px solid $bg-color-light;
+        border-right: 2px solid $bg-color-light;
       }
       span {
         display: block;
@@ -108,7 +113,7 @@
       &:after {
         content: "";
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         width: 31px;
         height: 21px;
         margin: 0 auto;
@@ -132,7 +137,7 @@
 @media (min-width: $screen-md) {
   .tariffs {
     padding-top: 92px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     &:before {
       height: 60px;
     }
@@ -141,17 +146,22 @@
     }
     .table {
       width: auto;
+      margin: 0 auto;
+      transform: translateX(0);
       &-header {
         width: 154px;
-        padding-top: 9px;
-        padding-bottom: 9px;
         font-size: 16px;
-        &:nth-of-type(3):before {
+        &__wrapper {
+          padding-top: 12px;
+          padding-bottom: 7px;
+        }
+        &__wrapper:before {
           width: 61px;
           height: 61px;
         }
         span {
           font-size: 18px;
+          font-weight: 300;
         }
       }
       &-header:first-of-type {
@@ -184,25 +194,32 @@
 
 @media (min-width: $screen-lg) {
   .tariffs {
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding-top: 150px;
+    padding-bottom: 65px;
     &:before {
       height: 94px;
     }
     .table {
       &-header {
-        width: 237px;
-        padding-top: 19px;
-        padding-bottom: 19px;
+        width: 234px;
         font-size: 18px;
         line-height: 30px;
         text-transform: uppercase;
+        &__wrapper {
+          padding-top: 19px;
+          padding-bottom: 19px;
+        }
+        &__wrapper:before {
+          width: 74px;
+          height: 73px;
+        }
         span {
           font-size: 24px;
         }
       }
       td:first-of-type {
-        padding: 15px 0 15px 25px;
+        padding: 14px 0 15px 22px;
+        font-weight: 400;
       }
     }
   }

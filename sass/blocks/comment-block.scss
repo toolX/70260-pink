@@ -1,22 +1,8 @@
 .comment-block {
   width: 100%;
-  &:first-of-type {
-    .comment-block__photo {
-      position: relative;
-      width: 320px;
-      height: 134px;
-      .comment-block__photo-tag {
-        position: absolute;
-        left: 0;
-        padding: 6px 23px 6px 23px;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: $text-color-light;
-        background-color: #d22856;
-      }
-    }
+  &__wrapper {
+    padding-left: get-padding(320, 20);
+    padding-right: get-padding(320, 20);
   }
   &:last-of-type {
     .comment-block__block {
@@ -28,16 +14,19 @@
     width: 280px;
     height: 180px;
   }
+  &  img {
+    height: auto;
+  }
   &__block {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px get-padding(320, 20) 20px get-padding(320, 20);
+    padding: 19px 0 19px get-padding(320, 20);
     margin-bottom: 20px;
     font-weight: 700;
     background-color: $bg-color-grey;
   }
   &__time {
-    margin-left: 5px;
+    margin-left: 4px;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -45,25 +34,53 @@
   &__text {
     width: 100%;
     margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 400;
   }
   &__likes {
-    padding-left: 15px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: #d22856;
     &:before {
+      content: "";
       display: inline-block;
+      vertical-align: baseline;
       width: 14px;
       height: 13px;
+      margin-right: 14px;
+      background: url("../img/icon-heart.svg") no-repeat center;
+    }
+  }
+  &--main {
+    &  .comment-block__photo {
+      position: relative;
+      width: 320px;
+      height: 134px;
+    }
+    &  .comment-block__photo-tag {
+      position: absolute;
+      right: 6%;
+      padding: 6px 20px 6px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $text-color-light;
+      background-color: #d22856;
+    }
+    &  .comment-block__block {
+      padding: 21px 0 19px get-padding(320, 20);
+    }
+    &  .comment-block__time {
+      margin-top: 1px;
     }
   }
 }
 
 @media (min-width: $screen-md) {
   .comment-block:not(:first-child) {
-    width: 48%;
+    width: 300px;
     .comment-block__likes {
       width: 100%;
       padding-left: 0;
@@ -78,9 +95,23 @@
     }
   }
   .comment-block {
+    &__wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__photo {
+      width: 300px;
+      height: 300px;
+    }
     &__block:not(:first-child) {
       min-height: 155px;
       padding-bottom: 0;
+    }
+    &--main {
+      &  .comment-block__photo {
+        width: 700px;
+        height: 509px;
+      }
     }
   }
   .comment-block:first-child {
