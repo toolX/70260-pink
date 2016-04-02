@@ -1,43 +1,83 @@
 .form-message {
+  display: none;
+  position: absolute;
   padding: 25px get-padding(320, 20) 50px get-padding(320, 20);
   background-color: $bg-color-light;
   box-shadow:
       0 -12px 5px -10px rgba(221,221,221,.3),
       0 20px 5px -10px rgba(221,221,221,.3);
   &__header {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
   }
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+    font-weight: 400;
     text-align: center;
   }
   &--error {
-    display: none;
-    position: absolute;
-    top: 1170px;
+    top: 1166px;
   }
   &--ok {
-    display: none;
-    position: absolute;
-    top: 1650px;
+    top: 1642px;
+    padding-top: 23px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
     .form-message__text {
       display: block;
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
-      margin-bottom: 40px;
+      margin-bottom: 31px;
       text-align: center;
     }
     .form-message__inner {
       display: flex;
       align-items: center;
-      height: 163px;
+      height: 160px;
+      padding-left: 20px;
+      padding-right: 20px;
       background: $bg-color-grey;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .form-message {
+    width: 300px;
+    left: 50%;
+    margin-left: -230px;
+    padding-top: 35px;
+    padding-left: 80px;
+    padding-right: 80px;
+    &__header {
+      width: 220px;
+      margin: 0 auto;
+      margin-bottom: 22px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &--error {
+      top: 910px;
+    }
+    &--ok {
+      width: 460px;
+      top: 1385px;
+      padding-left: 0;
+      padding-right: 0;
+      .form-message__text {
+        width: 310px;
+      }
+      .form-message__inner {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
     }
   }
 }

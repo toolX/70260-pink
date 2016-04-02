@@ -24,12 +24,13 @@
 
 @media (min-width: $screen-md) {
   .footer-copyright {
-    width: 33%;
+    width: 30%;
   }
 }
 
 @media (min-width: $screen-lg) {
   .footer-copyright {
+    width: 155px;
     font-weight: 400;
   }
 }

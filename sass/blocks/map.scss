@@ -15,11 +15,18 @@
 @media (min-width: $screen-md) {
   .map {
     height: 378px;
+    &:before {
+      height: 73px;
+      background-size: 100% 100%;
+    }
   }
 }
 
 @media (min-width: $screen-lg) {
   .map {
     height: 500px;
+    &:before {
+      height: 125px;
+    }
   }
 }

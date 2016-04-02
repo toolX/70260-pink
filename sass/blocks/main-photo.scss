@@ -1,0 +1,134 @@
+.main-photo {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: $bg-color-light;
+  &__photo {
+    position: relative;
+    width: 320px;
+    height: 134px;
+    margin: 0 auto;
+  }
+  &__photo-tag {
+    position: absolute;
+    right: 6%;
+    padding: 6px 20px 6px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $text-color-light;
+    background-color: #d22856;
+  }
+  &  img {
+    height: auto;
+  }
+  &__wrapper {
+    padding-left: get-padding(320, 20);
+    padding-right: get-padding(320, 20);
+  }
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 21px 0 19px get-padding(320, 20);
+    font-weight: 700;
+    background-color: $bg-color-grey;
+  }
+  &__time {
+    margin-top: 1px;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  &__likes-wrapper {
+    display: flex;
+  }
+  &__heart {
+    width: 14px;
+    height: 13px;
+  }
+  &__likes {
+    margin-left: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .main-photo {
+    padding-bottom: 50px;
+    &__photo {
+      width: 700px;
+      height: 509px;
+    }
+    &__photo-tag {
+      top: 57px;
+      right: 40px;
+    }
+    &__wrapper {
+      padding-left: get-padding(700, 40);
+      padding-right: get-padding(700, 40);
+    }
+    &__block {
+      align-items: center;
+      padding: 24px 25px 14px 28px;
+    }
+    &__time {
+      order: 1;
+      margin-left: 5px;
+    }
+    &__text {
+      order: 3;
+    }
+    &__likes-wrapper {
+      order: 2;
+      margin-left: 53%;
+    }
+    &__heart {
+      order: 2;
+    }
+    &__likes {
+      order: 1;
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .main-photo {
+    &__photo {
+      width: 1200px;
+      height: 506px;
+    }
+    &__photo-tag {
+      top: 55px;
+      right: 130px;
+    }
+    &__wrapper {
+      padding-left: get-padding(1200, 130);
+      padding-right: get-padding(1200, 130);
+    }
+    &__block {
+      padding-top: 23px;
+      font-size: 14px;
+    }
+    &__time {
+      font-size: 12px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__likes-wrapper {
+      margin-left: 70%;
+    }
+  }
+}

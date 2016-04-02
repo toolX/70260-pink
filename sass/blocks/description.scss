@@ -23,28 +23,35 @@
 }
 
 .description--sm {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 20px;
   &__text {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media (min-width: $screen-md) {
   .description {
     padding-top: 92px;
-    padding-bottom: 77px;
+    padding-bottom: 76px;
     &__text {
       width: 65%;
       font-size: 18px;
     }
   }
+  .description--bottom {
+    padding-top: 45px;
+    padding-bottom: 69px;
+  }
   .description--sm {
-    padding-top: 105px;
-    padding-bottom: 85px;
-    &__text {
-      width: 65%;
+    padding-top: 92px;
+    padding-bottom: 71px;
+    .description__text {
+      width: 80%;
       font-size: 18px;
+      &  .screen-lg {
+        display: inline;
+      }
     }
   }
 }
@@ -52,14 +59,19 @@
 @media (min-width: $screen-lg) {
   .description {
     &__text {
-      width: 80%;
+      width: 50%;
+      padding-bottom: 12px;
     }
   }
+  .description--bottom {
+    padding-top: 3px;
+    padding-bottom: 55px;
+  }
   .description--sm {
-    padding-top: 95px;
-    padding-bottom: 70px;
-    &__text {
-      width: 55%;
+    padding-top: 92px;
+    padding-bottom: 66px;
+    .description__text {
+      width: 760px;
       .screen-lg {
         display: inline;
       }

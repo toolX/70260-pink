@@ -4,37 +4,21 @@
 
 @media (min-width: $screen-md) {
   .ad {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 58px;
-    padding-bottom: 30px;
+    width: 100%;
+    min-height: 277px;
+    padding-bottom: 28px;
     background-color: $bg-color-light;
     &-image {
-      position: relative;
       width: 46%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &__text {
-        font-size: 96px;
-        font-weight: 700;
-        line-height: 150px;
-        color: #d22856;
-      }
-      &__timer {
-        width: 240px;
-        height: 277px;
-        fill: #dedede;
-      }
-      &__circle {
-        width: 203px;
-        height: 204px;
-        fill: #d22856;
-      }
+      background: url("../img/24.png") no-repeat center;
+      background-position: bottom;
     }
     &-description {
       width: 50%;
+      padding-top: 58px;
+      padding-bottom: 30px;
       &__header {
         display: block;
         width: 180px;
@@ -57,37 +41,17 @@
 
 @media (min-width: $screen-lg) {
   .ad {
-    justify-content: space-between;
-    padding-top: 19px;
+    min-height: 345px;
+    padding-top: 20px;
     padding-bottom: 68px;
     background-color: $bg-color-grey;
     &-image {
       width: 36%;
-      &__inner {
-        width: 298px;
-        height: 345px;
-        margin-left: auto;
-        margin-right: 0;
-      }
-      &__text {
-        top: 95px;
-        left: 80px;
-        font-size: 120px;
-        line-height: 187px;
-      }
-      &__timer {
-        width: 298px;
-        height: 345px;
-      }
-      &__circle {
-        top: 70px;
-        left: 23px;
-        width: 253px;
-        height: 253px;
-      }
+      background: url("../img/24-lg.png") no-repeat center;
+      background-position: 100% 100%;
     }
     &-description {
-      padding-top: 60px;
+      padding-top: 59px;
       width: 58.6%;
       &__header {
         width: 100%;

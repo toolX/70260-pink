@@ -22,6 +22,20 @@
       color: #d22856;
     }
   }
+  &__description--email {
+    .contacts__description-link {
+      color: $email-link;
+      text-decoration: none;
+    }
+    .contacts__description-link:hover {
+      color: $email-link-hvr;
+      text-decoration: underline;
+    }
+    .contacts__description-link:active {
+      color: $email-link-down;
+      text-decoration: none;
+    }
+  }
 }
 
 @media (min-width: $screen-md) {
