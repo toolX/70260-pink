@@ -1,24 +1,27 @@
 .contacts {
-  padding: 20px get-padding(320, 40) 20px get-padding(320, 40);
+  padding: 42px get-padding(320, 40) 20px get-padding(320, 40);
   background-color: $bg-color-light;
   &__header {
     display: block;
     width: 95%;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    margin-bottom: 32px;
     text-align: center;
     font-size: 24px;
+    line-height: 30px;
   }
   &__description {
     width: 100%;
     text-align: center;
     &-header {
-      margin-bottom: 5px;
+      margin-bottom: 0;
       font-size: 18px;
       color: #000000;
     }
     &-text {
       margin-top: 0;
       font-size: 24px;
+      line-height: 30px;
       color: #d22856;
     }
   }
@@ -44,7 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 45px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     padding-left: 0;
     padding-right: 0;
     &__header {
@@ -55,10 +58,10 @@
     }
     &__description-header {
       margin-top: 40px;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
     &__description-text {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     &__description--phone {
       width: 46%;

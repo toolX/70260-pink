@@ -38,9 +38,6 @@
     height: 24px;
     padding: 0;
     margin-right: get-padding(320, 20);
-    border: none;
-    border-radius: 0;
-    outline: none;
   }
   &__btn:hover {
     &  path {
@@ -51,6 +48,12 @@
     &  path {
       fill: $menu-btn-down;
     }
+  }
+  .cross {
+    display: none;
+    float: right;
+    width: 24px;
+    height: 23px;
   }
 }
 

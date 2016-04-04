@@ -19,7 +19,7 @@
   }
   &__block {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 19px 0 19px get-padding(320, 20);
     margin-bottom: 20px;
     font-weight: 700;
@@ -65,12 +65,17 @@
       height: 300px;
     }
     &__block {
+      flex-direction: column;
+      justify-content: space-between;
       align-content: flex-start;
-      min-height: 120px;
-      padding-top: 25px;
-      padding-bottom: 10px;
-      padding-left: 26px;
-      padding-right: 30px;
+      min-height: 110px;
+      padding-top: 24px;
+      padding-bottom: 21px;
+      padding-left: 27px;
+      padding-right: 31px;
+    }
+    &__time {
+      margin-left: 0;
     }
     &__likes-wrapper {
       flex-direction: row;
@@ -96,7 +101,7 @@
       height: 400px;
     }
     &__block {
-      margin-bottom: 55px;
+      margin-bottom: 54px;
     }
   }
 }

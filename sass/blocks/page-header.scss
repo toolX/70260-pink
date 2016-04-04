@@ -73,8 +73,11 @@
     background-image: url("../img/bg-back-desktop.jpg");
     background-position: 50% 0;
     background-size: auto 853px;
-    &__header {
+    .page-header__header {
       width: 50%;
+    }
+    .page-header__header-wide {
+      width: 80%;
     }
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

@@ -5,7 +5,10 @@
   background-color: $bg-color-light;
   box-shadow:
       0 -12px 5px -10px rgba(221,221,221,.3),
+      -12px 0 5px -10px rgba(221,221,221,.3),
+      12px 0 5px -10px rgba(221,221,221,.3),
       0 20px 5px -10px rgba(221,221,221,.3);
+  z-index: 1;
   &__header {
     margin-bottom: 26px;
     font-size: 18px;
@@ -77,6 +80,31 @@
       .form-message__inner {
         padding-left: 80px;
         padding-right: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .form-message {
+    &--error {
+      top: 824px;
+    }
+    &--ok {
+      top: 1277px;
+      width: 782px;
+      padding-top: 38px;
+      margin-left: -391px;
+      .form-message__header {
+        width: 100%;
+      }
+      .form-message__text {
+        width: 380px;
+        margin-bottom: 39px;
+      }
+      .form-message__inner {
+        padding-left: 160px;
+        padding-right: 160px;
       }
     }
   }

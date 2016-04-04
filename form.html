@@ -135,7 +135,7 @@
           </ul>
         </nav>
         <button class="btn  page-logo__btn">
-          <svg class="page-logo__btn--image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="page-logo__btn--image  burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
           <g id="miu">
           	<g id="editor_list_view_hambuger_menu_glyph">
@@ -155,6 +155,14 @@
           		</g>
           	</g>
           </g>
+          </svg>
+          <svg class="page-logo__btn--image  cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0
+          	c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313
+          	c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094
+          	c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22
+          	c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
         </button>
       </div>
@@ -178,19 +186,19 @@
             <label class="form-field__label" for="first-name">
                 Имя:
             </label>
-            <input class="form-field__input" type="text" name="first-name" id="first-name" value="Введите ваше имя" required>
+            <input class="form-field__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
           </div>
           <div class="form-field">
             <label class="form-field__label" for="last-name">
                 Фамилия:
             </label>
-            <input class="form-field__input" type="text" name="last-name" id="last-name" value="Укажите фамилию" required>
+            <input class="form-field__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
           </div>
           <div class="form-field">
             <label class="form-field__label" for="patronym">
                 Отчество:
             </label>
-            <input class="form-field__input" type="text" name="patronym" id="patronym" value="Ну и отчество тоже">
+            <input class="form-field__input" type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
         <fieldset class="form-block  form-block--grey">
@@ -246,14 +254,14 @@
                 <span class="screen-sm">Номерок телефончика</span>
                 <span class="screen-lg">Номер телефона</span>
               </label>
-              <input class="form-field__input" type="tel" name="phone-number" id="phone-number" value="Номер, пожалуйста" required>
+              <input class="form-field__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста" required>
             </div>
             <div class="form-field">
               <label class="form-field__label" for="email">
                 <span class="screen-sm">Адресок почты</span>
                 <span class="screen-lg">Адрес почты</span>
               </label>
-              <input class="form-field__input" type="email" name="email" id="email" value="E-mail, пожалуйста">
+              <input class="form-field__input" type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
             </div>
           </div>
         </fieldset>
@@ -290,13 +298,13 @@
             </textarea>
           </div>
         </fieldset>
-        <fieldset class="form-block">
+        <div class="form-block">
           <input type="submit" class="btn  form-btn" value="Отправить форму">
           <div class="form-block__required-fields">
             <span>&#42</span>
             &#8212 обязательные <span class="screen-lg">для заполнения</span> поля
           </div>
-        </fieldset>
+        </div>
         <div class="form-message  form-message--error">
           <h2 class="form-message__header">
             Что-то пошло не так!
@@ -495,5 +503,8 @@
         </a>
       </address>
     </footer>
+    <script src="js/tap.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/form-message.js"></script>
   </body>
 </html>

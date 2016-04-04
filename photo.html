@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Фотографии</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header  page-header--sm">
@@ -135,7 +140,7 @@
           </ul>
         </nav>
         <button class="btn  page-logo__btn">
-          <svg class="page-logo__btn--image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="page-logo__btn--image  burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
           <g id="miu">
           	<g id="editor_list_view_hambuger_menu_glyph">
@@ -155,6 +160,14 @@
           		</g>
           	</g>
           </g>
+          </svg>
+          <svg class="page-logo__btn--image  cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0
+          	c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313
+          	c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094
+          	c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22
+          	c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
         </button>
       </div>
@@ -247,13 +260,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Левон
-            <span class="comment-block__time">
-              (5 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
+            <div class="main-photo__description">
+              Левон
+              <span class="comment-block__time">
+                (5 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -299,13 +314,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Антон
-            <span class="comment-block__time">
-              (12 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Соседи будут рады!
-            </p>
+            <div class="main-photo__description">
+              Антон
+              <span class="comment-block__time">
+                (12 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Соседи будут рады!
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -351,13 +368,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Борис
-            <span class="comment-block__time">
-              (20 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
+            <div class="main-photo__description">
+              Борис
+              <span class="comment-block__time">
+                (20 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -403,13 +422,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Сергей
-            <span class="comment-block__time">
-              (25 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Самая кубанская в мире!
-            </p>
+            <div class="main-photo__description">
+              Сергей
+              <span class="comment-block__time">
+                (25 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Самая кубанская в мире!
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -455,13 +476,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Максим
-            <span class="comment-block__time">
-              (40 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Где снег-то?
-            </p>
+            <div class="main-photo__description">
+              Максим
+              <span class="comment-block__time">
+                (40 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Где снег-то?
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -507,13 +530,15 @@
             </a>
           </figure>
           <div class="comment-block__block">
-            Надежда
-            <span class="comment-block__time">
-              (45 часов назад)
-            </span>
-            <p class="comment-block__text">
-              Всем GM и взаимные лайки!
-            </p>
+            <div class="main-photo__description">
+              Надежда
+              <span class="comment-block__time">
+                (45 часов назад)
+              </span>
+              <p class="comment-block__text">
+                Всем GM и взаимные лайки!
+              </p>
+            </div>
             <div class="comment-block__likes-wrapper">
               <span class="comment-block__heart">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -575,6 +600,9 @@
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                   </svg>
                 </label>
+                <div class="user-photo__scale">
+                  <div class="user-photo__bar"></div>
+                </div>
               </li>
               <li class="user-photo__item">
                 <input type="radio" id="fill">
@@ -588,6 +616,9 @@
                   <rect y="40" width="48" height="3"/>
                   </svg>
                 </label>
+                <div class="user-photo__scale">
+                  <div class="user-photo__bar"></div>
+                </div>
               </li>
               <li class="user-photo__item">
                 <input type="radio" id="contrast">
@@ -601,12 +632,14 @@
                   <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                   </svg>
                 </label>
+                <div class="user-photo__scale">
+                  <div class="user-photo__bar"></div>
+                </div>
               </li>
             </ul>
             <div class="user-photo__range-controls">
               <div class="scale">
-                <div class="bar">
-                </div>
+                <div class="bar"></div>
               </div>
             </div>
             <div class="user-photo__form-buttons">
@@ -788,5 +821,7 @@
         </a>
       </address>
     </footer>
+    <script src="js/tap.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

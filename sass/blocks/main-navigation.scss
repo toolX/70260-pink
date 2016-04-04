@@ -1,8 +1,9 @@
 .main-navigation {
   display: none;
   position: absolute;
-  top: 72px;
+  top: 67px;
   width: 100%;
+  z-index: 5;
   &__list {
     width: 100%;
     padding: 0;
@@ -36,10 +37,15 @@
     }
   }
 }
+.menu-show {
+  .main-navigation {
+    display: block;
+  }
+}
 
 @media (min-width: $screen-md) {
   .main-navigation {
-    top: 110px;
+    top: 111px;
   }
 }
 

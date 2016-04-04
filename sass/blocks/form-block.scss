@@ -82,7 +82,7 @@
       display: block;
     }
     &__required-fields {
-      width: 320px;
+      text-align: right;
     }
   }
   .form-block--grey {
@@ -134,11 +134,12 @@
     }
   }
   .form-block:nth-child(6) {
-    //display: flex;
+    display: flex;
     order: 6;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -190,6 +191,7 @@
   }
   .form-block:nth-child(6) {
     width: 100%;
+    margin-bottom: 0;
     .form-block__required-fields {
       font-size: 14px;
       text-align: right;

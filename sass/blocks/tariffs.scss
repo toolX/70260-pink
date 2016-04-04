@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding-top: 103px;
-  padding-bottom: 60px;
+  padding-bottom: 47px;
   &:before {
     position: absolute;
     top: 0;
@@ -20,8 +20,9 @@
   }
   &__switcher {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 75px;
+    width: 65px;
     margin: 0 auto;
     label {
       width: 6px;
@@ -29,7 +30,7 @@
       cursor: pointer;
       border-radius: 50%;
       background: #bec2c7;
-      &:first-of-type {
+      &:nth-child(2) {
         border: 3px solid $bg-color-dark;
         background: $bg-color-light;
       }
@@ -45,7 +46,7 @@
     }
   }
   &__table-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     overflow-x: hidden;
   }
   .table {
@@ -56,7 +57,6 @@
     transform: translateX(-50%);
     border-collapse: collapse;
     &-header {
-      width: 280px;
       font-size: 18px;
       font-weight: 700;
       line-height: 30px;
@@ -70,6 +70,7 @@
       }
       &__wrapper {
         position: relative;
+        width: 276px;
         padding-top: 18px;
         padding-bottom: 18px;
       }
@@ -96,8 +97,9 @@
       }
     }
     td {
-      padding: 10px 0 10px 10px;
+      padding: 15px 0 14px 20px;
       padding-right: 30px;
+      font-weight: 400;
       line-height: 30px;
       color: $text-color-dark;
       background-color: $bg-color-light;
@@ -110,7 +112,10 @@
       }
     }
     .yes {
+      position: relative;
       &:after {
+        position: absolute;
+        right: 20px;
         content: "";
         display: inline-block;
         vertical-align: middle;
@@ -121,7 +126,10 @@
       }
     }
     .no {
+      position: relative;
       &:after{
+        position: absolute;
+        right: 20px;
         content: "";
         display: inline-block;
         vertical-align: middle;
@@ -137,21 +145,24 @@
 @media (min-width: $screen-md) {
   .tariffs {
     padding-top: 92px;
-    padding-bottom: 39px;
+    padding-bottom: 29px;
     &:before {
       height: 60px;
     }
     &__switcher {
       display: none;
     }
+    &__table-wrapper {
+      overflow-x: visible;
+    }
     .table {
       width: auto;
       margin: 0 auto;
       transform: translateX(0);
       &-header {
-        width: 154px;
         font-size: 16px;
         &__wrapper {
+          width: 154px;
           padding-top: 12px;
           padding-bottom: 7px;
         }
@@ -167,6 +178,9 @@
       &-header:first-of-type {
         display: table-cell;
       }
+      .table-text {
+        width: 140px;
+      }
       td {
         padding: 7px 0 7px 0;
         text-transform: none;
@@ -180,11 +194,13 @@
       }
       .yes {
         &:after {
+          position: static;
           display: block;
         }
       }
       .no {
         &:after {
+          position: static;
           display: block;
         }
       }
@@ -195,17 +211,17 @@
 @media (min-width: $screen-lg) {
   .tariffs {
     padding-top: 150px;
-    padding-bottom: 65px;
+    padding-bottom: 54px;
     &:before {
       height: 94px;
     }
     .table {
       &-header {
-        width: 234px;
         font-size: 18px;
         line-height: 30px;
         text-transform: uppercase;
         &__wrapper {
+          width: 235px;
           padding-top: 19px;
           padding-bottom: 19px;
         }
@@ -216,6 +232,9 @@
         span {
           font-size: 24px;
         }
+      }
+      .table-text {
+        width: 212px;
       }
       td:first-of-type {
         padding: 14px 0 15px 22px;
