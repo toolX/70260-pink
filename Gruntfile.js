@@ -103,26 +103,6 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-      options: {
-        separator: ";"
-      },
-      dist: {
-        src: [
-          "js/*.js"
-        ],
-        dest: "build/js/script.js"
-      }
-    },
-
-    uglify: {
-      style: {
-        files: {
-          "build/js/script.min.js": ["build/js/script.js"]
-        }
-      }
-    },
-
     browserSync: {
       server: {
         bsFiles: {
@@ -167,8 +147,6 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
-    "concat",
-    "uglify",
     "symbols",
     "imagemin"
   ]);
