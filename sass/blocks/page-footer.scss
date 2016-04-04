@@ -19,15 +19,21 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     background-color: $bg-color-light;
   }
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-lg) {
   .page-footer {
-    padding-top: 70px;
+    padding-left: get-padding(1200, 130);
+    padding-right: get-padding(1200, 130);
+    justify-content: space-between;
+    padding-top: 20px;
     padding-bottom: 70px;
+  }
+  .page-footer--lg {
+    padding-top: 97px;
   }
 }

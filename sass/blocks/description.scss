@@ -1,10 +1,11 @@
 .description {
-  padding: 60px 0 60px 0;
+  padding: 45px 0 49px 0;
   background-color: $bg-color-light;
   &__text {
     display: block;
     width: 77%;
     margin: 0 auto;
+    font-weight: 400;
     line-height: 30px;
     text-align: center;
     .screen-lg {
@@ -13,22 +14,44 @@
   }
 }
 
-.description--sm {
-  padding-top: 50px;
-  padding-bottom: 40px;
-  &__text {
+.description--bottom {
+  padding-top: 43px;
+  padding-bottom: 42px;
+  &  .description__text {
     width: 80%;
   }
 }
 
+.description--sm {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  &__text {
+    width: 90%;
+  }
+}
+
 @media (min-width: $screen-md) {
-  .description,
-  .description--sm {
-    padding-top: 105px;
-    padding-bottom: 85px;
+  .description {
+    padding-top: 92px;
+    padding-bottom: 76px;
     &__text {
       width: 65%;
       font-size: 18px;
+    }
+  }
+  .description--bottom {
+    padding-top: 45px;
+    padding-bottom: 69px;
+  }
+  .description--sm {
+    padding-top: 92px;
+    padding-bottom: 71px;
+    .description__text {
+      width: 80%;
+      font-size: 18px;
+      &  .screen-lg {
+        display: inline;
+      }
     }
   }
 }
@@ -36,14 +59,19 @@
 @media (min-width: $screen-lg) {
   .description {
     &__text {
-      width: 80%;
+      width: 50%;
+      padding-bottom: 12px;
     }
   }
+  .description--bottom {
+    padding-top: 4px;
+    padding-bottom: 55px;
+  }
   .description--sm {
-    padding-top: 95px;
-    padding-bottom: 70px;
-    &__text {
-      width: 55%;
+    padding-top: 92px;
+    padding-bottom: 66px;
+    .description__text {
+      width: 760px;
       .screen-lg {
         display: inline;
       }

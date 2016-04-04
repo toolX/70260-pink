@@ -4,26 +4,73 @@
   min-height: 52px;
   padding-left: 0;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   &__item {
     width: 52px;
     height: 51px;
     margin-right: 12px;
     font-size: 0;
-    background: url("../img/circle-footer.png") no-repeat center;
     &:last-of-type {
       margin-right: 0;
     }
-    a {
-      display: block;
-      width: 52px;
-      height: 51px;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 51px;
+    &  .circle {
+      fill: $footer-circle;
+    }
+    &  .footer-icon {
+      fill: $footer-icon;
+    }
+    .icon-tw {
+      position: absolute;
+      top: 19px;
+      left: 17px;
+    }
+    .icon-fb {
+      position: absolute;
+      top: 17px;
+      left: 21px;
+    }
+    .icon-ytb {
+      position: absolute;
+      top: 19px;
+      left: 20px;
+    }
+  }
+  &__link:hover {
+    &  .circle {
+      fill: $footer-circle-hvr;
+    }
+    &  .footer-icon {
+      fill: $footer-icon-hvr;
+    }
+  }
+  &__link:active {
+    opacity: .3;
+    &  .circle {
+      fill: $footer-circle;
+    }
+    &  .footer-icon {
+      fill: $footer-icon;
     }
   }
 }
 
 @media (min-width: $screen-md) {
   .footer-links {
+    width: 29%;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .footer-links {
+    width: 180px;
+    margin: 0;
+    justify-content: center;
   }
 }

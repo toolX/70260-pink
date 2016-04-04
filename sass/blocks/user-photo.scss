@@ -1,7 +1,7 @@
 .user-photo {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 41px 0;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -10,59 +10,66 @@
     width: 280px;
     height: 374px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 41px;
   }
   &__filters {
-    .filters-list {
-      width: 250px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding-left: 0;
-      list-style: none;
-      &__item {
-        display: inline-block;
-        input {
-          display: none;
-        }
-        .filters-item__btn {
-          display: block;
-          cursor: pointer;
-        }
-        .crop-btn {
-          width: 44px;
-          height: 44px;
-          background: url("../img/icon-editor-crop.svg") no-repeat center;
-        }
-        .fill-btn {
-          width: 48px;
-          height: 43px;
-          background: url("../img/icon-editor-fill.svg") no-repeat center;
-        }
-        .contrast-btn {
-          width: 32px;
-          height: 32px;
-          background: url("../img/icon-editor-contrast.svg") no-repeat center;
-        }
-      }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__item {
+    input {
+      display: none;
     }
+  }
+  &__btn {
+    display: block;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: $user-photo-icon;
+  }
+  &__icon:hover {
+    fill: $user-photo-icon-hvr;
+  }
+  &__icon:active {
+    fill: $user-photo-icon-down;
+  }
+  .crop-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .fill-btn {
+    width: 48px;
+    height: 43px;
+  }
+  .contrast-btn {
+    width: 32px;
+    height: 32px;
+  }
+  &__scale,
+  &__bar {
+    display: none;
   }
   &__range-controls {
     width: 100%;
     height: 20px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     border-bottom: 1px solid #dddfe0;
-    .scale {
-      width: 260px;
+    &  .scale {
+      width: 240px;
       margin: 0 auto;
       border-bottom: 2px solid $text-color-dark;
-      .bar {
+      &  .bar {
         position: relative;
-        top: 7px;
-        left: 80%;
+        top: 8px;
+        left: 80.5%;
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -70,20 +77,45 @@
         background-color: $bg-color-grey;
         cursor: pointer;
       }
+      &  .bar:hover {
+        background-color: #d22856;
+      }
     }
   }
   &__form-buttons {
     display: flex;
     flex-direction: column;;
-    .user-photo__btn {
-      width: 280px;
-      margin: 0 auto;
-      margin-bottom: 10px;
-      font-weight: 700;
-      color: #d22856;
-      background-color: transparent;
-      border-color: #d22856;
-    }
+  }
+  &__form-btn {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #d22856;
+    background-color: transparent;
+    border-color: #d22856;
+  }
+  &__form-btn--cancel {
+    margin-bottom: 0;
+    color: $user-photo-btn-cancel;
+    border-color: $user-photo-btn-cancel;
+  }
+  &__form-btn:hover {
+    color: $text-color-light;
+    background-color: $user-photo-btn-hvr;
+  }
+  &__form-btn:active {
+    color: rgba(255, 255, 255, .3);
+  }
+  &__form-btn--cancel:hover {
+    color: $user-photo-btn-cancel-hvr;
+    border-color: $user-photo-btn-cancel-hvr;
+    background-color: transparent;
+  }
+  &__form-btn--cancel:active {
+    color: #cbced2;
+    border-color: $user-photo-btn-cancel-hvr;
+    background-color: $user-photo-btn-cancel-hvr;
   }
 }
 
@@ -91,7 +123,7 @@
   .user-photo {
     flex-direction: row;
     justify-content: space-between;
-    padding:55px get-padding(768, 40) 55px get-padding(768, 40);
+    padding:57px get-padding(700, 40) 55px get-padding(700, 40);
     &__image {
       display: block;
       width: 300px;
@@ -105,61 +137,82 @@
       width: 275px;
     }
     &__filters {
-      .filters-list {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        &__item {
-          width: 100%;
-          padding-top: 15px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #dddfe0;
-          &:before {
-            position: relative;
-            top: 15px;
-            left: 50%;
-            transform: translateX(-45%);
-            content: "";
-            display: block;
-            width: 80%;
-            height: 2px;
-            background-color: $text-color-dark;
-          }
-          &:after {
-            position: relative;
-            top: -15px;
-            left: 75%;
-            content: "";
-            display: block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid #d22856;
-            background-color: $bg-color-grey;
-            cursor: pointer;
-          }
-          .crop-btn {
-            width: 22px;
-            height: 22px;
-          }
-          .fill-btn {
-            width: 24px;
-            height: 22px;
-          }
-          .contrast-btn {
-            width: 16px;
-            height: 16px;
-          }
-        }
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 7px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #dddfe0;
+    }
+    &__scale {
+      display: block;
+      position: relative;
+      top: -8px;
+      width: 202px;
+      margin-right: 19px;
+      border-bottom: 2px solid $text-color-dark;
+    }
+    &__bar {
+      display: block;
+      position: relative;
+      top: 14px;
+      left: 73%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid #d22856;
+      background-color: $bg-color-grey;
+      cursor: pointer;
+    }
+    &__bar:hover {
+      background-color: #d22856;
+    }
+    &__item:nth-child(2) {
+      .user-photo__bar {
+        left: 14%;
       }
+      padding-top: 24px;
+    }
+    &__item:nth-child(3) {
+      padding-top: 25px;
+      padding-bottom: 28px;
+      .user-photo__scale {
+        top: -6px;
+      }
+      .user-photo__bar {
+        top: 8px;
+        left: 48%;
+      }
+    }
+    .crop-btn {
+      width: 22px;
+      height: 22px;
+    }
+    .fill-btn {
+      width: 24px;
+      height: 22px;
+    }
+    .contrast-btn {
+      width: 16px;
+      height: 16px;
     }
     &__range-controls {
       display: none;
     }
     &__form-buttons {
-      .user-photo__btn:first-child {
-        margin-bottom: 20px;
-      }
+      align-items: flex-start;
+    }
+    &__form-btn:first-of-type {
+      margin-bottom: 24px;
+    }
+    &__form-btn {
+      width: 256px;
     }
   }
 }
@@ -170,56 +223,65 @@
     padding-right: get-padding(1200, 130);
     background-color: $bg-color-light;
     .user-photo {
-      padding:60px 60px 60px 80px;
+      padding:56px 60px 58px 80px;
       background-color: $bg-color-grey;
       &__wrapper {
         width: 415px;
       }
-      &__filters {
-        .filters-list {
-          &__item:first-child {
-            padding-top: 0;
-            &:before {
-              top: 21px;
-            }
-          }
-          &__item {
-            padding-bottom: 0;
-            &:before {
-              top: 20px;
-            }
-            &:after {
-              top: -30px;
-            }
-            .crop-btn {
-              width: 44px;
-              height: 44px;
-            }
-            .fill-btn {
-              width: 48px;
-              height: 43px;
-            }
-            .contrast-btn {
-              width: 32px;
-              height: 32px;
-            }
-          }
-          &__item:last-child {
-            &:before {
-              top: 17px;
-            }
-            &:after {
-              top: -22px;
-            }
-          }
+      &__item {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 55px;
+      }
+      &__scale {
+        width: 288px;
+        top: -33px;
+        margin-right: 30px;
+      }
+      &__bar {
+        top: 47px;
+        left: 25%;
+      }
+      &__item:nth-child(2) {
+        padding-top: 12px;
+        padding-bottom: 5px;
+        .user-photo__scale {
+          top: -28px;
         }
+        .user-photo__bar {
+          top: 47px;
+          left: 86%;
+        }
+      }
+      &__item:nth-child(3) {
+        padding-top: 14px;
+        .user-photo__scale {
+          top: -33px;
+        }
+        .user-photo__bar {
+          top: 47px;
+          left: 55%;
+        }
+      }
+      .crop-btn {
+        width: 44px;
+        height: 44px;
+      }
+      .fill-btn {
+        width: 48px;
+        height: 43px;
+      }
+      .contrast-btn {
+        width: 32px;
+        height: 32px;
       }
       &__form-buttons {
         flex-direction: row;
-        .user-photo__btn {
-          width: 40%;
-          margin-bottom: 0;
-        }
+        justify-content: space-between;
+      }
+      &__form-btn {
+        width: 183px;
+        margin-bottom: 0;
       }
     }
   }

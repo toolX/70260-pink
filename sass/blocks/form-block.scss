@@ -1,13 +1,14 @@
 .form-block {
   display: flex;
   margin: 0;
-  padding: 40px get-padding(320, 20) 30px get-padding(320, 20);
+  padding: 14px get-padding(320, 20) 30px get-padding(320, 20);
   background-color: $bg-color-light;
   border: none;
   &__header {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 44px;
+    font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -17,6 +18,7 @@
     display: none;
   }
   &__required-fields {
+    font-weight: 400;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -30,63 +32,114 @@
 }
 
 .form-block--grey {
+  padding-top: 36px;
+  padding-bottom: 37px;
   background-color: $bg-color-grey;
+  .form-block__header {
+    font-weight: 400;
+  }
+}
+
+.form-block:nth-child(3) {
+  padding-top: 29px;
+  padding-bottom: 38px;
+}
+
+.form-block:nth-child(4) {
+  padding-bottom: 30px;
+  .form-block__header {
+    margin-bottom: 40px;
+  }
+}
+
+.form-block:nth-child(5) {
+  padding-top: 51px;
+  padding-bottom: 10px;
+  .form-block__header {
+    margin-bottom: 11px;
+    line-height: 30px;
+  }
 }
 
 .form-block:nth-child(6) {
   flex-direction: column;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $screen-md) {
   .form-block {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     &__header {
+      display: block;
+      width: 370px;
+      position: relative;
+      top: -10px;
       margin-bottom: 40px;
+      background-color: $bg-color-light;
     }
     &  .hidden {
-      display: inline;
+      display: block;
     }
     &__required-fields {
-      float: right;
-      width: 61%;
+      text-align: right;
     }
   }
   .form-block--grey {
     padding: 0;
     background-color: $bg-color-light;
   }
+  .form-block:nth-child(2),
+  .form-block:nth-child(3),
+  .form-block:nth-child(4),
+  .form-block:nth-child(5) {
+    padding-left: 57px;
+    padding-right: 57px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+  }
   .form-block:nth-child(1) {
     order: 1;
   }
   .form-block:nth-child(2) {
     order: 4;
-    padding-left: 55px;
-    padding-right: 55px;
-    border: 2px solid #e5e5e5;
+    padding-bottom: 36px;
+    .form-block__header {
+      width: 435px;
+      margin-bottom: 39px;
+    }
   }
   .form-block:nth-child(3) {
     order: 3;
-    padding-left: 55px;
-    padding-right: 55px;
-    border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-bottom: 21px;
+    .form-block__header {
+      width: 260px;
+      margin-bottom: 27px;
+    }
   }
   .form-block:nth-child(4) {
     order: 2;
-    padding-left: 55px;
-    padding-right: 55px;
-    border: 2px solid #e5e5e5;
+    padding-bottom: 45px;
   }
   .form-block:nth-child(5) {
     order: 5;
-    padding-left: 55px;
-    padding-right: 55px;
-    border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-bottom: 51px;
+    margin-bottom: 67px;
+    .form-block__header {
+      width: 260px;
+      top: -16px;
+      margin-bottom: 15px;
+    }
   }
   .form-block:nth-child(6) {
-    display: block;
+    display: flex;
     order: 6;
-    //flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -98,29 +151,49 @@
       justify-content: space-between;
       //flex-direction: column;
     }
+    &__header {
+      font-size: 14px;
+    }
   }
   .form-block:nth-child(1) {
-    width: 45%;
+    width: 436px;
   }
   .form-block:nth-child(2) {
     width: 100%;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-bottom: 7px;
   }
   .form-block:nth-child(3) {
     flex-direction: row;
     width: 100%;
+    padding-bottom: 8px;
+    .form-block__header {
+      width: 260px;
+    }
   }
   .form-block:nth-child(4) {
-    width: 35%;
-    padding-left: 70px;
+    align-items: center;
+    width: 431px;
+    padding-left: 0;
     padding-right: 0;
+    .form-block__header {
+      width: 365px;
+    }
   }
   .form-block:nth-child(5) {
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
+    margin-bottom: 65px;
+    .form-block__header {
+      margin-bottom: 12px;
+    }
   }
   .form-block:nth-child(6) {
     width: 100%;
+    margin-bottom: 0;
     .form-block__required-fields {
+      font-size: 14px;
       text-align: right;
       .screen-lg {
         display: inline;

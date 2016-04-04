@@ -1,8 +1,9 @@
 .main-navigation {
-  //display: none;
+  display: none;
   position: absolute;
-  top: 72px;
+  top: 67px;
   width: 100%;
+  z-index: 5;
   &__list {
     width: 100%;
     padding: 0;
@@ -24,39 +25,62 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 32px;
-      color: #ffffff;
+      color: $mobile-menu;
       text-transform: uppercase;
       text-decoration: none;
     }
+    a:hover {
+      color: $mobile-menu-hvr;
+    }
+    a:active {
+      color: $mobile-menu-down;
+    }
+  }
+}
+.menu-show {
+  .main-navigation {
+    display: block;
   }
 }
 
 @media (min-width: $screen-md) {
   .main-navigation {
-    top: 110px;
+    top: 111px;
   }
 }
 
 @media (min-width: $screen-lg) {
   .main-navigation {
+    display: block;
     position: static;
-    width: 60%;
+    margin-top: 15px;
     &__list {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
     }
     &__item {
-      width: 20%;
       background: none;
       border-top: none;
       border-bottom: none;
       a {
         display: inline;
         padding: 0;
+        padding-bottom: 10px;
         font-weight: 400;
         line-height: 18px;
         text-transform: none;
       }
+      a:hover {
+        color: $text-color-light;
+        border-bottom: 2px solid $text-color-light;
+      }
+      a:active {
+        opacity: .3;
+        border-bottom: none;
+      }
+    }
+    &__item:not(:last-child) {
+      margin-right: 80px;
     }
   }
 }

@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   &__header {
+    margin-bottom: 13px;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
@@ -9,10 +10,16 @@
   span {
     display: none;
   }
+  &__link {
+    display: none;
+  }
   &__text {
     display: block;
-    width: 97%;
+    width: 88%;
     margin: 0 auto;
+    margin-bottom: 33px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
 
@@ -22,7 +29,7 @@
     flex-direction: column;
     &__header {
       order: 2;
-      margin-bottom: 0;
+      margin-bottom: 2px;
       font-size: 20px;
       font-weight: 700;
       line-height: 30px;
@@ -30,33 +37,57 @@
     span {
       display: block;
       order: 3;
-      margin-bottom: 30px;
+      margin-bottom: 33px;
+      font-weight: 400;
       line-height: 30px;
     }
     &__text {
       order: 1;
-      width: 90%;
-      margin-bottom: 20px;
+      min-width: 620px;
+      margin-bottom: 18px;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 30px;
     }
   }
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-lg) {
   .feedback {
-    &::before {
-      @include before(0, 50%, url("../img/quotes.png"))
-      width: 79px;
-      height: 63px;
+    &__link {
+      display: inline-block;
+      vertical-align: top;
+      width: 22px;
+      height: 41px;
+      margin-top: 27px;
+    }
+    &__link:first-child {
+      margin-right: 93px;
+    }
+    &__link:last-child {
+      margin-left: 93px;
+    }
+    &__arrow {
+      fill: $feedback-arrow;
+    }
+    &__arrow:hover {
+      fill: $feedback-arrow-hvr;
+    }
+    &__arrow:active {
+      fill: $feedback-arrow-down;
     }
     &__header {
       font-size: 24px;
+      font-weight: 700;
     }
     &__text {
-      width: 60%;
-      margin-top: 30px;
+      display: inline-block;
+      width: 700px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+    span {
+      font-weight: 400;
     }
   }
 }

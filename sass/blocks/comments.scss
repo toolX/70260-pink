@@ -1,9 +1,7 @@
 .comments {
   display: flex;
   flex-direction: column;
-  padding-left: get-padding(320, 20);
-  padding-right: get-padding(320, 20);
-  background-color: $bg-color-light;;
+  background-color: $bg-color-light;
 }
 
 @media (min-width: $screen-md) {
@@ -11,8 +9,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: get-padding(768, 40);
-    padding-right: get-padding(768, 40);
+    padding-left: get-padding(700, 40);
+    padding-right: get-padding(700, 40);
   }
 }
 

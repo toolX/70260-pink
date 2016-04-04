@@ -2,6 +2,7 @@
   width: 50%;
   display: inline-block;
   font-style: normal;
+  font-weight: 400;
   text-align: center;
   &__link {
     display: inline-block;
@@ -9,12 +10,27 @@
     width: 27px;
     height: 34px;
     margin-left: 10px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat center;
+  }
+  &__logo {
+    fill: $footer-copyright-logo;
+  }
+  &__logo:hover {
+    fill: $footer-copyright-logo-hvr;
+  }
+  &__logo:active {
+    fill: $footer-copyright-logo-down;
   }
 }
 
 @media (min-width: $screen-md) {
   .footer-copyright {
-    width: 33%;
+    width: 30%;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .footer-copyright {
+    width: 155px;
+    font-weight: 400;
   }
 }
