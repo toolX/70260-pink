@@ -18,7 +18,7 @@
     height: 378px;
     &:before {
       height: 73px;
-      background-size: 100% 100%;
+      background-size: auto 73px;
     }
   }
 }
@@ -28,6 +28,7 @@
     height: 500px;
     &:before {
       height: 125px;
+      background-size: auto 125px;
     }
   }
 }

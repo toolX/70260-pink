@@ -19,15 +19,14 @@ body {
     margin: 0 auto;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     color: $text-color-dark;
-    background: $bg-color-grey;
+    background: $bg-color-light;
 }
 
 @media (min-width: $screen-lg) {
   body {
-    max-width: 1200px;
     font-size: 18px;
   }
 }

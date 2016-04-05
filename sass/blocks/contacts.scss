@@ -82,12 +82,16 @@
   .contacts {
     padding-top: 63px;
     padding-bottom: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
     &__header {
       order: 1;
       width: 100%;
-      padding-left: 30%;
-      padding-right: 30%;
+      padding-left: 15%;
+      padding-right: 15%;
       margin-bottom: 16px;
       font-size: 50px;
       line-height: 60px;
@@ -99,7 +103,7 @@
     }
     &__description--phone {
       order: 2;
-      width: 27%;
+      width: 33%;
       .contacts__description-text {
         display: block;
         line-height: 30px;
@@ -107,7 +111,7 @@
     }
     &__description--email {
       order: 4;
-      width: 27%;
+      width: 33%;
       .contacts__description-text {
         display: block;
         line-height: 30px;
@@ -115,10 +119,11 @@
     }
     &__description--address {
       order: 3;
-      width: 26.5%;
+      width: 33%;
       .contacts__description-text {
         display: block;
-        width: 70%;
+        max-width: 250px;
+        width: auto;
         margin: 0 auto;
         line-height: 30px;
       }

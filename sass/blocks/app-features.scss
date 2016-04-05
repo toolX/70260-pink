@@ -2,16 +2,16 @@
   position: relative;
   min-height: 700px;
   padding: 85px 0 12px 0;
-  background-image: url("../img/iphone-screen-mobile.png"), url("../img/bg-triangle-white.svg");
+  background: url("../img/iphone-screen-mobile.png");
   background-color: $bg-color-grey;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 50% 109%, 0 0;
-  background-size: auto auto, auto 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 109%;
+  background-size: 157px 320px;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 659px) {
   .app-features {
-    background-image: url("../img/iphone-screen-mobile@2x.png"), url("../img/bg-triangle-white.svg");
+    background: url("../img/iphone-screen-mobile@2x.png");
   }
 }
 
@@ -21,13 +21,13 @@
     padding-top: 70px;
     padding-bottom: 3px;
     padding-left: 50%;
-    background-image: url("../img/iphone-screen-tablet-3@1x.png"), url("../img/bg-triangle-white.svg");
-    background-position: 9.5% 8px, 0 0;
-    background-size: auto auto, auto 60px;
+    background: url("../img/iphone-screen-tablet-3@1x.png");
+    background-position: 9.5% 8px;
+    background-size: auto auto;
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .app-features {
-      background-image: url("../img/iphone-screen-tablet-3@2x.png"), url("../img/bg-triangle-white.svg");
+      background: url("../img/iphone-screen-tablet-3@2x.png");
     }
   }
 }
@@ -35,14 +35,11 @@
 @media (min-width: $screen-lg) {
   .app-features {
     display: flex;
-    align-items: flex-end;
-    height: 400px;
-    padding-top: 203px;
-    padding-bottom: 0;
-    padding-left: get-padding(1200, 130);
-    padding-right: get-padding(1200, 130);
-    background-image: url("../img/bg-triangle-white.svg");
-    background-position: 0 0;
-    background-size: auto 95px;
+    padding-bottom: 50px;
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
+    background: none;
   }
 }

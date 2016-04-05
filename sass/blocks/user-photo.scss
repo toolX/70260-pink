@@ -88,7 +88,6 @@
   }
   &__form-btn {
     width: 280px;
-    margin: 0 auto;
     margin-bottom: 12px;
     font-weight: 700;
     color: #d22856;
@@ -208,9 +207,6 @@
     &__form-buttons {
       align-items: flex-start;
     }
-    &__form-btn:first-of-type {
-      margin-bottom: 24px;
-    }
     &__form-btn {
       width: 256px;
     }
@@ -218,71 +214,73 @@
 }
 
 @media (min-width: $screen-lg) {
-  .user-photo__outer {
-    padding-left: get-padding(1200, 130);
-    padding-right: get-padding(1200, 130);
+  .user-photo-outer {
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     background-color: $bg-color-light;
-    .user-photo {
-      padding:56px 60px 58px 80px;
-      background-color: $bg-color-grey;
-      &__wrapper {
-        width: 415px;
+  }
+  .user-photo {
+    padding:56px 60px 58px 80px;
+    background-color: $bg-color-grey;
+    &__wrapper {
+      width: 415px;
+    }
+    &__item {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 55px;
+    }
+    &__scale {
+      width: 288px;
+      top: -33px;
+      margin-right: 30px;
+    }
+    &__bar {
+      top: 47px;
+      left: 25%;
+    }
+    &__item:nth-child(2) {
+      padding-top: 12px;
+      padding-bottom: 5px;
+      .user-photo__scale {
+        top: -28px;
       }
-      &__item {
-        padding-top: 0;
-        padding-bottom: 0;
-        height: 55px;
-      }
-      &__scale {
-        width: 288px;
-        top: -33px;
-        margin-right: 30px;
-      }
-      &__bar {
+      .user-photo__bar {
         top: 47px;
-        left: 25%;
+        left: 86%;
       }
-      &__item:nth-child(2) {
-        padding-top: 12px;
-        padding-bottom: 5px;
-        .user-photo__scale {
-          top: -28px;
-        }
-        .user-photo__bar {
-          top: 47px;
-          left: 86%;
-        }
+    }
+    &__item:nth-child(3) {
+      padding-top: 14px;
+      .user-photo__scale {
+        top: -33px;
       }
-      &__item:nth-child(3) {
-        padding-top: 14px;
-        .user-photo__scale {
-          top: -33px;
-        }
-        .user-photo__bar {
-          top: 47px;
-          left: 55%;
-        }
+      .user-photo__bar {
+        top: 47px;
+        left: 55%;
       }
-      .crop-btn {
-        width: 44px;
-        height: 44px;
-      }
-      .fill-btn {
-        width: 48px;
-        height: 43px;
-      }
-      .contrast-btn {
-        width: 32px;
-        height: 32px;
-      }
-      &__form-buttons {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      &__form-btn {
-        width: 183px;
-        margin-bottom: 0;
-      }
+    }
+    .crop-btn {
+      width: 44px;
+      height: 44px;
+    }
+    .fill-btn {
+      width: 48px;
+      height: 43px;
+    }
+    .contrast-btn {
+      width: 32px;
+      height: 32px;
+    }
+    &__form-buttons {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__form-btn {
+      width: 183px;
+      margin-bottom: 0;
     }
   }
 }

@@ -24,13 +24,14 @@
 
 @media (min-width: $screen-md) {
   .footer-copyright {
-    width: 30%;
+    width: auto;
+    max-width: 25%;
   }
 }
 
 @media (min-width: $screen-lg) {
   .footer-copyright {
-    width: 155px;
     font-weight: 400;
+    text-align: right;
   }
 }

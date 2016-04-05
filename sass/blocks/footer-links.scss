@@ -62,14 +62,13 @@
 
 @media (min-width: $screen-md) {
   .footer-links {
-    width: 29%;
+    max-width: 30%;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $screen-lg) {
   .footer-links {
-    width: 180px;
     margin: 0;
     justify-content: center;
   }

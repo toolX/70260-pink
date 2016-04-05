@@ -48,6 +48,10 @@
 @media (min-width: $screen-lg) {
   .feedbacks {
     position: relative;
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     padding-top: 185px;
     padding-bottom: 5px;
     &:before {

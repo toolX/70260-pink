@@ -109,10 +109,12 @@
   .page-logo {
     display: flex;
     align-items: center;
-    padding-left: get-padding(1200, 130);
-    padding-right: get-padding(1200, 130);
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     padding-bottom: 43px;
-    background: rgba(0, 0, 0, .3);
+    background: none;
     border-bottom: none;
     &__link {
       margin-left: 0;

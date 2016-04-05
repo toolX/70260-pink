@@ -1,0 +1,10 @@
+.app-features-wrapper {
+  @media (min-width: $screen-lg) {
+    padding-top: 290px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: $bg-color-grey;
+  }
+}

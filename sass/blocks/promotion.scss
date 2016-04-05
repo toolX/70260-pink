@@ -36,6 +36,10 @@
 
 @media (min-width: $screen-lg) {
   .promotion {
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     padding-top: 67px;
     padding-bottom: 80px;
     &__text {

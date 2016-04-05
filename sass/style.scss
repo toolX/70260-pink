@@ -4,8 +4,10 @@
 @import "mixins";
 // Blocks
 @import "blocks/ad";
+@import "blocks/ad-wrapper";
 @import "blocks/app-download";
 @import "blocks/app-features";
+@import "blocks/app-features-wrapper";
 @import "blocks/bar";
 @import "blocks/body";
 @import "blocks/btn-circle";
@@ -36,4 +38,5 @@
 @import "blocks/scale";
 @import "blocks/tariffs";
 @import "blocks/toggle";
+@import "blocks/top-row";
 @import "blocks/user-photo";

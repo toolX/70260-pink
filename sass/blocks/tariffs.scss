@@ -3,18 +3,11 @@
   width: 100%;
   padding-top: 103px;
   padding-bottom: 47px;
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 50px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  background-color: $bg-color-grey;
   &__slider-switcher {
     display: none;
   }
@@ -46,6 +39,10 @@
     }
   }
   &__table-wrapper {
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     margin-bottom: 40px;
     overflow-x: hidden;
   }
@@ -73,18 +70,18 @@
         width: 276px;
         padding-top: 18px;
         padding-bottom: 18px;
+        overflow: hidden;
       }
       &__wrapper--ribbon:before {
         position: absolute;
         top: 0;
         left: 0;
-        display: block;
-        content: "";
-        width: 74px;
-        height: 73px;
-        background-image: url("../img/bg-hit.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        transform: rotate(-45deg);
+        content: "ХИТ";
+        width: 120px;
+        font-size: 14px;
+        line-height: 28px;
+        background: #d22856;
       }
       &:nth-of-type(3) {
         border-left: 2px solid $bg-color-light;
@@ -166,10 +163,6 @@
           padding-top: 12px;
           padding-bottom: 7px;
         }
-        &__wrapper:before {
-          width: 61px;
-          height: 61px;
-        }
         span {
           font-size: 18px;
           font-weight: 300;
@@ -224,10 +217,6 @@
           width: 235px;
           padding-top: 19px;
           padding-bottom: 19px;
-        }
-        &__wrapper:before {
-          width: 74px;
-          height: 73px;
         }
         span {
           font-size: 24px;

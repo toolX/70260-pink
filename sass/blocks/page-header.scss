@@ -55,7 +55,7 @@
     .page-header {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
     }
-    .page-header--sm {
+    .page-header.page-header--sm {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
@@ -74,10 +74,16 @@
     background-position: 50% 0;
     background-size: auto 853px;
     .page-header__header {
-      width: 50%;
+      max-width: $content-width;
+      padding-left: get-padding(940, 10);
+      padding-right: get-padding(940, 10);
+      margin: 0 auto;
     }
     .page-header__header-wide {
-      width: 80%;
+      max-width: $content-width;
+      padding-left: get-padding(940, 10);
+      padding-right: get-padding(940, 10);
+      margin: 0 auto;
     }
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

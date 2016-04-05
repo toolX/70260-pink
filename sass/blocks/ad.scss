@@ -42,6 +42,10 @@
 @media (min-width: $screen-lg) {
   .ad {
     min-height: 345px;
+    max-width: $content-width;
+    padding-left: get-padding(940, 10);
+    padding-right: get-padding(940, 10);
+    margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 68px;
     background-color: $bg-color-grey;

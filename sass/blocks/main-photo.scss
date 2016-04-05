@@ -29,6 +29,7 @@
   &__block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 21px 0 19px get-padding(320, 20);
     font-weight: 700;
     background-color: $bg-color-grey;
@@ -90,7 +91,6 @@
     }
     &__likes-wrapper {
       order: 2;
-      margin-left: 53%;
     }
     &__heart {
       order: 2;
@@ -106,16 +106,20 @@
 @media (min-width: $screen-lg) {
   .main-photo {
     &__photo {
-      width: 1200px;
+      width: 100%;
+      max-width: 1200px;
       height: 506px;
+      overflow: hidden;
     }
     &__photo-tag {
       top: 55px;
       right: 130px;
     }
     &__wrapper {
-      padding-left: get-padding(1200, 130);
-      padding-right: get-padding(1200, 130);
+      max-width: $content-width;
+      padding-left: get-padding(940, 10);
+      padding-right: get-padding(940, 10);
+      margin: 0 auto;
     }
     &__block {
       padding-top: 23px;
@@ -126,9 +130,6 @@
     }
     &__text {
       font-size: 14px;
-    }
-    &__likes-wrapper {
-      margin-left: 70%;
     }
   }
 }

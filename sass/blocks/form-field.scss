@@ -1,7 +1,9 @@
 .form-field {
   width: 100%;
   margin-bottom: 16px;
+  box-sizing: border-box;
   &__label {
+    box-sizing: border-box;
     display: block;
     padding-left: 22px;
     margin-bottom: 5px;
@@ -59,11 +61,13 @@
 .form-block--grey {
   .form-field {
     display: flex;
+    box-sizing: border-box;
     &__input-checkbox,
     &__input-radio {
       display: none;
     }
     &__label {
+      box-sizing: border-box;
       position: relative;
       width: 100%;
       padding-left: 69px;
