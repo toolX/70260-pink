@@ -2,9 +2,6 @@
   max-width: 100%;
   padding: 22px 0 15px 0;
   background: rgba(0, 0, 0, .3);
-  //padding: 24px get-padding(320, 20) 18px get-padding(320, 20);
-  //border-bottom: 1px solid #000000;
-  //background: #283645;
   &__link {
     width: 75px;
     height: 22px;
@@ -54,6 +51,19 @@
     float: right;
     width: 24px;
     height: 23px;
+  }
+  &--menu-show {
+    border-bottom: 1px solid #000000;
+    background: #283645;
+    & .main-navigation {
+      display: block;
+    }
+    & .burger {
+      display: none;
+    }
+    & .cross {
+      display: block;
+    }
   }
 }
 

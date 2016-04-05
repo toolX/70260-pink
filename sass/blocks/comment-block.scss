@@ -20,13 +20,12 @@
   &__block {
     display: flex;
     flex-direction: column;
-    padding: 19px 0 19px get-padding(320, 20);
+    padding: 18px 0 20px get-padding(320, 20);
     margin-bottom: 20px;
     font-weight: 700;
     background-color: $bg-color-grey;
   }
   &__time {
-    margin-left: 4px;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -34,7 +33,7 @@
   &__text {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-weight: 400;
   }
   &__likes-wrapper {

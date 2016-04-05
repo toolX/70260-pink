@@ -2,6 +2,10 @@
   width: 100%;
   margin-bottom: 16px;
   box-sizing: border-box;
+  ::-webkit-input-placeholder {color:$text-color-dark;}
+  ::-moz-placeholder          {color:$text-color-dark;}
+  :-moz-placeholder           {color:$text-color-dark;}
+  :-ms-input-placeholder      {color:$text-color-dark;}
   &__label {
     box-sizing: border-box;
     display: block;
@@ -214,11 +218,29 @@
   }
   .form-block:nth-child(2) {
     .form-field {
-      align-items: flex-start;
+      box-sizing: border-box;
       width: 260px;
       &__label {
         text-transform: none;
       }
+    }
+    .form-field:nth-child(1) {
+      order: 1;
+    }
+    .form-field:nth-child(2) {
+      order: 4;
+    }
+    .form-field:nth-child(3) {
+      order: 2;
+    }
+    .form-field:nth-child(4) {
+      order: 5;
+    }
+    .form-field:nth-child(5) {
+      order: 3;
+    }
+    .form-field:nth-child(6) {
+      order: 6;
     }
   }
   .form-block:nth-child(3) {

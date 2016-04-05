@@ -24,8 +24,9 @@
 
 @media (min-width: $screen-md) {
   .footer-copyright {
-    width: auto;
+    width: 180px;
     max-width: 25%;
+    text-align: right;
   }
 }
 

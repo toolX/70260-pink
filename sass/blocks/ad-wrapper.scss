@@ -1,5 +1,9 @@
 .ad-wrapper {
+  @media (min-width: $screen-md) {
+    padding-top: 60px;
+  }
   @media (min-width: $screen-lg) {
+    padding-top: 20px;
     background-color: $bg-color-grey;
   }
 }

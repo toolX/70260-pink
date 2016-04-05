@@ -32,6 +32,7 @@
     display: block;
     width: 85%;
     margin: 0 auto;
+    font-weight: 300;
     text-align: center;
     color: $text-color-light;
   }
@@ -81,6 +82,9 @@
     }
     &__icons {
       margin-bottom: 42px;
+    }
+    &__text {
+      font-weight: 300;
     }
   }
 }

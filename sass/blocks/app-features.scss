@@ -1,42 +1,22 @@
 .app-features {
   position: relative;
-  min-height: 700px;
-  padding: 85px 0 12px 0;
-  background: url("../img/iphone-screen-mobile.png");
-  background-color: $bg-color-grey;
-  background-repeat: no-repeat;
-  background-position: 50% 109%;
-  background-size: 157px 320px;
-}
-
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 659px) {
-  .app-features {
-    background: url("../img/iphone-screen-mobile@2x.png");
-  }
+  padding: 0 0 12px 0;
 }
 
 @media (min-width: $screen-md) {
   .app-features {
-    min-height: 370px;
     padding-top: 70px;
     padding-bottom: 3px;
     padding-left: 50%;
-    background: url("../img/iphone-screen-tablet-3@1x.png");
-    background-position: 9.5% 8px;
-    background-size: auto auto;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .app-features {
-      background: url("../img/iphone-screen-tablet-3@2x.png");
-    }
   }
 }
 
 @media (min-width: $screen-lg) {
   .app-features {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     max-width: $content-width;
+    padding-top: 360px;
     padding-left: get-padding(940, 10);
     padding-right: get-padding(940, 10);
     margin: 0 auto;

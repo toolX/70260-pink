@@ -17,15 +17,15 @@
 .description--bottom {
   padding-top: 43px;
   padding-bottom: 42px;
-  &  .description__text {
-    width: 600px;
+  .description__text {
+    width: 260px;
   }
 }
 
 .description--sm {
   padding-top: 45px;
   padding-bottom: 20px;
-  &__text {
+  .description__text {
     width: 90%;
   }
 }
@@ -42,6 +42,9 @@
   .description--bottom {
     padding-top: 45px;
     padding-bottom: 69px;
+    .description__text {
+      width: 600px;
+    }
   }
   .description--sm {
     padding-top: 92px;

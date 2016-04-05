@@ -140,6 +140,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
@@ -161,8 +162,11 @@
   .form-block:nth-child(2) {
     width: 100%;
     padding-left: 60px;
-    padding-right: 50px;
+    padding-right: 0;
     padding-bottom: 7px;
+    .form-block__wrapper {
+      justify-content: space-between;
+    }
   }
   .form-block:nth-child(3) {
     flex-direction: row;

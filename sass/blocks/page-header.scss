@@ -65,7 +65,7 @@
   .page-header {
     height: 853px;
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop.jpg");
-    background-position: 97% 100%, 50% 0;
+    background-position: 74% 100%, 50% 0;
     background-size: auto auto, auto 853px;
   }
   .page-header--sm {
@@ -75,12 +75,14 @@
     background-size: auto 853px;
     .page-header__header {
       max-width: $content-width;
+      width: 370px;
       padding-left: get-padding(940, 10);
       padding-right: get-padding(940, 10);
       margin: 0 auto;
     }
     .page-header__header-wide {
       max-width: $content-width;
+      width: 750px;
       padding-left: get-padding(940, 10);
       padding-right: get-padding(940, 10);
       margin: 0 auto;
