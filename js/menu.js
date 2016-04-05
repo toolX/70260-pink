@@ -1,20 +1,12 @@
 (function() {
   var mobileMenuOpen = document.querySelector('.page-logo__btn');
-  var nav = document.querySelector('.main-navigation');
-  var iconBurger = document.querySelector('.burger');
-  var iconCross = document.querySelector('.cross');
   var pageLogo = document.querySelector('.page-logo');
-  isMenuOpen = false;
+
+  pageLogo.classList.remove('page-logo--menu-show');
+  document.querySelector('.no-js').classList.remove('no-js');
 
   mobileMenuOpen.addEventListener('tap', function(event) {
     event.preventDefault();
-    if (isMenuOpen == false) {
-      pageLogo.classList.add('page-logo--menu-show');
-      isMenuOpen = true;
-    }
-    else if (isMenuOpen == true) {
-      pageLogo.classList.remove('page-logo--menu-show');
-      isMenuOpen = false;
-    }
+    pageLogo.classList.toggle('page-logo--menu-show');
   });
 })();

@@ -64,6 +64,11 @@
     & .cross {
       display: block;
     }
+    & .no-js {
+      &.cross {
+        display: none;
+      }
+    }
   }
 }
 
