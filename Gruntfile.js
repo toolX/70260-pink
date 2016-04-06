@@ -147,7 +147,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
-    "symbols",
-    "imagemin"
+    "symbols"
+    //"imagemin"
   ]);
 };

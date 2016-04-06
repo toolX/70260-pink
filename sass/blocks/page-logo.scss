@@ -123,7 +123,8 @@
 @media (min-width: $screen-lg) {
   .page-logo {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: $content-width;
     padding-left: get-padding(940, 10);
     padding-right: get-padding(940, 10);
